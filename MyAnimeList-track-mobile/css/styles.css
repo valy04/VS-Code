@@ -1,0 +1,2005 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {background-color: white;}
+
+.white {color: white;}
+
+.light-gray,  .mylist-light-gray {color: #6a6b6a;;}
+
+.green {
+    background-color: #2db039;
+    color: white;
+}
+
+.progress-bar-green{
+    height: 13px;
+    background-color: #2db039;
+}
+
+.blue {
+    background-color: #2e51a2;
+    color: white;
+}
+
+.progress-bar-blue{
+    height: 13px;
+    background-color: #2e51a2;
+}
+
+.c-blue {color: #2e51a2;}
+
+.c-blue2 {
+    color: #3065e0;
+    font-weight: bold;
+}
+
+.yellow {
+    background-color: #e7b715;
+    color: black;
+}
+
+.progress-bar-yellow{
+    height: 13px;
+    background-color: #e7b715;
+}
+
+.red {
+    background-color: #a12f31;
+    color: white;
+}
+
+.progress-bar-red{
+    height: 13px;
+    background-color: #a12f31;
+}
+
+.gray {
+    background-color: #8f8f8f;
+    color: black;
+}
+
+.progress-bar-gray{
+    height: 13px;
+    background-color: #1d1d1c;
+}
+
+.black {background-color:#1d1b1d;}
+
+@media only screen and (min-width: 481px) {
+    .container {display: none;}
+}
+
+@media (prefers-color-scheme: dark) {
+    @media only screen and (max-width: 480px) {
+        ::-webkit-scrollbar {width: 0px;}
+        
+        body {background-color: #1d1d1c;}
+
+        .container {position: relative;}
+
+        /* HEADER - - - HEADER - - - HEADER */
+
+        .header-wrapper {
+            background-color: #1d1d1c;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .content-mylist-wrapper {
+            background-color: #131213;
+        }
+
+        .header {
+            position: relative;
+            margin: 0 15px 0 15px;
+            padding: 4px 0 2px 0;
+        }
+
+        .logo-notifications-wrapper svg {
+            position: relative;
+            color: white;
+            width: 29px;
+            height: 29px;
+        }
+        
+        .header-ul {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            margin-top: 5px;
+        }
+
+        .header-li {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nothing svg {
+            position: relative;
+            color: transparent;
+            display: inline-block;
+            user-select: none;
+        }
+
+        .arrow-left svg {
+            color: white;
+            width: 35px;
+            height: 35px;
+        }
+
+        .logo-pfp-wrapper {
+            position: relative;
+            background-color: gray;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .logo-pfp-wrapper img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .logo-mal-mobile {
+            position: relative;
+            width: 47px;
+            height: 47px;
+            color: white;
+            user-select: none;
+        }
+
+        .logo-mal-resize {margin-left: 40px;}
+
+        .margin-left {margin-left: 5px;}
+        .margin-right {margin-right: 34px;}
+        .margin-top {padding-top: 10px;}
+        .margin-top2 {margin-top: 50px;}
+
+        .search-wrapper, .search-discover-wrapper {
+            position: relative;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            padding-top: 8px;
+            background-color: #131213;
+            border-bottom: 1px solid #676667;
+        }
+
+        .search-wrapper h4 {
+            position: relative;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            margin: 0 12px 0 12px;
+            font-size: 19px;
+            color: #e4e4e4;
+            padding-bottom: 8px;
+        }
+
+        .search, .search-discover {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(78, 74, 74);
+            border-radius: 8px;
+            margin: 0 12px 0 12px;
+            padding: 6px 0 6px 0;
+            margin-bottom: 15px;
+        }
+
+        .search-discover-wrapper {
+            background-color: #1d1d1c;
+            padding-bottom: 1px;
+            margin: 0 10px 0 10px;
+            border: 0;
+        }
+
+        .search-discover {
+            background-color: #131213;
+            border: 0;
+        }
+
+        input[type=text] {
+            position: relative;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            font-size: 18px;
+            background-color: transparent;
+            margin-left: 16px;
+            outline: none;
+            color: black;
+        }
+
+        .svg svg {
+            position: relative;
+            color: #676667;
+            margin-top: 4px;
+            margin-left: 22px;
+            width: 18;
+            height: 18;
+        }
+
+        /* HEADER - - - HEADER - - - HEADER */
+
+        /* NAV - - - NAV - - - NAV - - - NAV */
+
+        .nav-wrapper, .nav-seasonal-wrapper, .nav-mylist-wrapper {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: sticky;
+            background-color: #1d1d1c;
+            bottom: 0;
+            z-index: 99;
+        }
+
+        .dropdown-shadow {box-shadow: rgb(19, 18, 18) 0px 3px 5px -3px;}
+
+        .dropdown-shadow-bottom {box-shadow: rgb(19, 18, 18) 0px -3px 5px -3px;}
+
+        .nav-ul {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 7px 0 7px 0;
+            font-size: 12px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .nav-li svg {
+            position: relative;
+            display: block;
+            margin: auto;
+            width: 25px;
+            height: 25px;
+        }
+
+        .nav-seasonal-wrapper { 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav-mylist-wrapper {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 10px 0 10px;
+            align-items: center;
+            flex-wrap: nowrap;
+            /* overflow-x: scroll; */
+        }
+
+        .nav-ul-mylist {
+            
+        }
+
+        .nav-ul-mylist a {
+            
+        }
+
+        .nav-li-mylist {
+
+        }
+
+        .seasonal-stats {
+            font-size: 17.5px;
+            padding: 10px 0 10px 0;
+            border-bottom: 3px solid white;
+            color: white;
+        }
+
+        .mylist-stats {
+            position: relative;
+            color: white;
+            padding: 10px 9px 10px 9px;
+            border-bottom: 3px solid white;
+        }
+
+        .mylist-light-gray {
+            padding: 10px 0 10px 0;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-ul-seasonal {
+            text-align: center;
+            width: 25%;
+        }
+
+        .nav-ul-seasonal a {font-size: 17px;}
+
+        .nav-ul-mylist a {font-size: 17px;}
+
+        .stats-wrapper {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #131213;
+        }
+
+        .stats-ul {
+            position: relative;
+            color: #e4e4e4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 17px 0 17px;
+        }
+        
+        .stats-li {
+            display: block;
+            padding: 11px 0 12px 0;
+            font-size: 17px;
+        }
+
+        .stats-li:nth-child(2) {
+            font-size: 20px;
+        }
+
+        .stats-li svg:nth-child(1) {
+            vertical-align: middle;
+            margin-left: 3px;
+            width: 15px;
+            height: 15px;
+        }
+        
+        #stats-li-svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            margin-left: 20px;
+        }
+
+        #stats-li-svg-2 {
+            color: white;
+            width: 24px;
+            height: 24px;
+        }
+
+        .stats-li {display: block;}
+
+        .dropdown-menu {
+            position: absolute;
+            display: none;
+            width: 110px;
+            background-color: #131213;
+            border: 1px solid #2e2b2b;
+            border-radius: 5px;
+            margin-left: -16px;
+            margin-top: 13px;
+            padding-bottom: 4px;
+        }
+
+        .drp-dwn-mn {margin-left: -16.52px;}
+        
+        .dropdown-menu-2, .dropdown-menu-3 {
+            position: absolute;
+            display: none;
+            width: 130px;
+            background-color: #131213;
+            border: 1px solid #2e2b2b;
+            border-radius: 5px;
+            margin-left: -64px;
+            margin-top: 12px;
+        }
+
+        .dropdown-menu-3 {
+            width: 190px;
+            margin-left: -147px;
+        }
+
+        .dropdown-li {
+            display: block;
+            padding: 7px;
+        }
+
+        .dropdown-menu-2 .dropdown-li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .dropdown-menu-3 .dropdown-li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .dropdown-menu-2 .dropdown-li:nth-child(2) {
+            border-top: 1px dashed #2e2b2b;
+            border-bottom: 1px dashed #2e2b2b;
+            width: 100%;
+        }
+
+        .dropdown-menu-3 .dropdown-li:nth-child(2) {
+            border-top: 1px dashed #2e2b2b;
+            border-bottom: 1px dashed #2e2b2b;
+            width: 100%;
+        }
+
+        .dropdown-menu-3 .dropdown-li:nth-child(3) {
+            border-bottom: 1px dashed #2e2b2b;
+            width: 100%;
+        }
+
+        .dropdown-menu-3 .dropdown-li:nth-child(4) {
+            border-bottom: 1px dashed #2e2b2b;
+            width: 100%;
+        }
+
+        .dropdown-menu-3 .dropdown-li:nth-child(5) {
+            border-bottom: 1px dashed #2e2b2b;
+            width: 100%;
+        }
+
+        .stats-li:hover .dropdown-menu {display: block;}
+
+        .stats-li:hover .dropdown-menu-2 {display: block;}
+
+        .stats-li:hover .dropdown-menu-3 {display: block;}
+
+        .checkbox-round {
+            width: 1.2em;
+            height: 1.2em;
+            border-radius: 50%;
+            border: 3.5px solid black;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: 2px solid white;
+        }
+        
+        .checkbox-round:checked {background-color: white;}
+
+        .content-seasonal-wrapper {
+            position: relative;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #131213;
+        }
+
+        .content-seasonal {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .content-seasonal-archives {background-color: #1d1d1c;}
+        
+        .article-seasonal {
+            padding: 0 8px 8px 8px;
+            margin-left: 2px;
+            margin-bottom: -50px;
+        }
+
+        .article-seasonal p:nth-child(2) {
+            color: #e4e4e4;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-seasonal p:nth-child(3) {
+            color: gray;
+            font-size: 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .article-seasonal img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .article-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .article-stats button{
+            position: relative;
+            padding: 5px 4px 0px 4px;
+            border-radius: 4px;
+            top: -97px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .article-stats button svg {
+            width: 27px;
+            height: 27px;
+            background: transparent;
+            color: white;
+        }
+
+        .score {
+            position: relative;
+            background-color: rgb(54, 49, 49);
+            opacity: 0.96;
+            width: 100px;
+            height: 50px;
+            top: -97px;
+        }
+
+        .nota {
+            position: relative;
+            color: #e4e4e4;
+            font-size: 17px;
+            margin: 1px 0 0 9px;
+        }
+
+        .members {
+            display: flex;
+            position: relative;
+            color: #e4e4e4;
+            font-size: 17px;
+            margin-left: 9px;
+            align-items: center;
+        }
+        
+        .members svg {margin-left: 5px;}
+
+        .content-seasonal-archives {margin-top: 15px;}
+
+        .years h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: #e4e4e4;
+        }
+
+        .years-seasons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }  
+
+        .years-seasons span {
+            background-color: rgb(12, 12, 12);
+            color: gray;
+            border-radius: 5px;
+            border: 1px solid gray;
+            text-align: center;
+            font-size: 19px;
+            margin: 0 5px 0 5px;
+            padding: 4px 13px 4px 13px;
+        }
+
+        /* NAV - - - NAV - - - NAV - - - NAV */
+
+        /* CONTENT - - - CONTENT - - - CONTENT */
+
+        .content-track, .section-wrapper {
+            position: relative;
+            background-color: #131213;
+        }
+        
+        .section-wrapper {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #e4e4e4;
+            padding-top: 13px;
+        }
+
+        .section {padding: 7px 0 0 13px;}
+
+        .section-wrapper span {font-size: 17px;}
+
+        .article-discover-wrapper {
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: scroll;
+            margin-top: 7px;
+            margin-left: -5.6px;
+        }
+
+        .article-discover {
+            position: relative;
+            margin-left: 7px;
+        }
+
+        .img-discover-wrapper {
+            position: relative;
+            width: 110px;
+            height: 150px;
+            background-color: white;
+        }
+
+        .img-discover-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .article-discover a {color: #e4e4e4;}
+
+        .article-discover span {
+            font-size: 13.5px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid #676667;
+            padding: 8px 0 8px 0;
+        }
+
+        .logo-img {
+            background-color: white;
+            width: 110px;
+            height: 142px;
+            overflow: hidden;
+        } 
+
+        .logo-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .pfp-friends-img {
+            position: relative;
+            background-color: white;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-left: 20px;
+            overflow: hidden;
+        }
+        
+        .pfp-friends-img img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text-info {
+            display: block;
+            width: 70%;
+            margin: 0 15px 0 15px;
+        }
+
+        .acctepted {
+            color: #676667;
+            font-size: 16px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 10px 0 6px 0;
+        }
+
+        .name {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .time {
+            color: #6a6b6a;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 7px;
+            font-size: 12.5px;
+        }
+
+        .more-info {
+            position: relative;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #e4e4e4;
+            font-size: 15.5px;
+        }
+
+        .more-info-img-wrapper {
+            position: relative;
+            background-color: white;
+            width: 100%;
+            height: 200px;
+            margin-top: 18px;
+        }
+
+        .more-info-img-wrapper img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .more-info-2 {
+            position: relative;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            color: rgb(209, 66, 66);
+            cursor: pointer;
+        }
+
+        .more-info-3 {
+            position: relative;
+            color: white;
+        }
+
+        .discution-info {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #808180;
+            margin: 15px -5px 10px 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .z-1 {z-index: 1; margin-right: -5.5px;}
+        .z-2 {z-index: 2; margin-right: -5.5px;}
+        .z-3 {z-index: 3;}
+
+        .discution-info-svg {
+            display: flex;
+            align-items: center;
+        }
+
+        .discution-info svg {
+            width: 19px;
+            height: 19px;
+        }
+
+        .count-people {
+            position: relative;
+            margin-left: 6px;
+            font-size: 16px;
+        }
+
+        .pfp-people-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            background-color: white;
+            width: 27px;
+            height: 27px;
+            margin-right: 95px;
+        }
+        
+        .pfp-people {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .more-people {
+            position: relative;
+            font-size: 15px;
+            margin-left: 3px;
+        }
+
+        .anime-info-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #808180;
+            margin: 50px -5px 0 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .anime-info-2 div {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .anime-info-2 a {
+            color: #808180;
+            padding: 2px 5px 2px 5px;
+            font-size: 15px;
+            border: 1px solid #6a6b6a;
+        }
+
+        .img-edit {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+
+        .img-edit-add {
+            position: relative;
+            width: 31px;
+            height: 31px;
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+
+        .img-news {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .count-edit {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 2px 8px 2px 8px;
+            font-size: 15px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        .count-edit img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .btn-reactions {
+            width: 36px;
+            height: 36px;
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+
+        .pfp-people {position: relative;}
+
+        .reaction {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-right: 20px;
+            font-size: 15px;
+            padding: 2px 6px 2px 6px;
+            border: 1px solid;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        .article-mylist {
+            position: relative;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-bottom: 1px solid #333233;
+            color: #e4e4e4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .wrp-left {
+            display: flex; 
+            width: 100%;
+        }
+
+        .img-wrp-mylist {
+            background-color: white;
+            width: 103px;
+            height: 150px;
+        }
+
+        .img-wrp-mylist img {
+            width: 103px;
+            height: 150px;
+            object-fit: fill;
+        }
+
+        .flt-right {
+            margin: 5px 20px 0 14px;
+            width: 100%;
+        }
+
+        .wrapper-st {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .title-serie {
+            font-size: 19px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 2px;
+        }
+
+        .st {
+            font-size: 16.3px;
+            color: #8f8c8c;
+        }
+
+        .flt-bottom {
+            position: absolute;
+            bottom: 0.5em;
+            left: 117px;
+            right: 71px;
+        }
+
+        .progress {
+            position: relative;
+            background-color: #1d1d1c;
+            width: 100%;
+        }
+
+        .mylist-dtb {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .mylist-dtb p {font-size: 17.4px;}
+
+        .mylist-dtb p:nth-child(1) {font-weight: bold;}
+
+        .mylist-dtb p span {font-weight: bold;}
+
+        .wrp-right {margin: 0 15px 15px 0;}
+
+        .wrp-right button {
+            display: flex;
+            background: transparent;
+            margin-bottom: 2px;
+            color: gray;
+        }
+
+        .wrp-right-px {margin-bottom: -2px;}
+        
+        .wrp-right button:nth-child(1) {margin-bottom: 5px;}
+
+        .wrp-right button svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        .wrp-btn-swt {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #8f8f8f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 20px 6px 20px;
+            color: white;
+            border-radius: 20px;
+        }
+
+        .btn-swt-actived-a, .btn-swt-actived-m {
+            position: absolute;
+            padding: 14px;
+            border-radius: 50%;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .btn-swt-actived-a {right: 37.5px;}
+
+        .btn-swt-actived-m {right: 3px;}
+
+        .categ-anime {
+            margin: 0 12.5px 0 -8px;
+            z-index: 3;
+        }
+
+        .categ-manga {
+            margin: 0 -9.5px 0 11px;
+            z-index: 3;
+        }
+    }
+
+    @media only screen and (max-width: 455px) {
+        .article-stats button{top: -97px;}
+        
+        .article-stats button svg {
+            width: 23px;
+            height: 23px;
+        }
+        
+        .score {
+            width: 90px;
+            height: 45px;
+            top: -97px;
+        }
+        
+        .nota {
+            font-size: 15px;
+            margin: 2px 0 0 9px;
+        }
+        
+        .members {font-size: 15px;}
+        
+        .members svg {
+            width: 14.5px;
+            height: 14.5px;
+        }
+
+        .article-seasonal p:nth-child(3) {margin-bottom: 5px;}
+
+        .img-wrp-mylist {
+            width: 97px;
+            height: 145px;
+        }
+
+        .img-wrp-mylist img {
+            width: 97px;
+            height: 145px;
+            object-fit: fill;
+        }
+
+        .title-serie {font-size: 17.5px;}
+
+        .st {font-size: 16px;}
+        
+        .mylist-dtb p {font-size: 17px;}
+
+        .wrp-right button svg {
+            width: 33px;
+            height: 33px;
+        }
+
+        .flt-bottom {
+            left: 112px;
+            right: 69px;
+        }
+
+        .flt-right {margin: 5px 20px 0 13px;}
+
+        .progress-bar-green{height: 12.85px;}
+        
+        .progress-bar-blue{height: 12.85px;}
+        
+        .progress-bar-yellow{height: 12.85px;}
+        
+        .progress-bar-red{height: 12.85px;}
+        
+        .progress-bar-gray{height: 12.85px;}
+    }
+
+    @media only screen and (max-width: 400px) {
+        .content-seasonal {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        }
+
+        .article-seasonal p:nth-child(2) {font-size: 15px;}
+
+        .article-seasonal p:nth-child(3) {font-size: 15px;}
+
+        .article-stats button{top: -95px;}
+        
+        .score {top: -95px;}
+
+        .logo-pfp-wrapper {
+            width: 38px;
+            height: 38px;
+        }
+        
+        .logo-mal-mobile {
+            width: 45px;
+            height: 45px;
+        }
+
+        .logo-mal-resize {margin-left: 43px;}
+        
+        .header {
+            margin: 0 14px 0 14px;
+            padding: 4px 0 3px 0;
+        }
+        
+        .logo-notifications-wrapper svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .seasonal-stats {font-size: 16.5px;}
+
+        .nav-ul-seasonal a {font-size: 16.3px;}
+
+        .nav-ul-mylist a {font-size: 16.3px;}
+
+        .logo-img {
+            width: 100px;
+            height: 125px;
+        }
+
+        .search-wrapper h4 {font-size: 18px;}
+
+        .search, .search-discover {
+            padding: 4.5px 0 4.5px 0;
+            margin-bottom: 15px;
+        }
+
+        input[type=text] {font-size: 17px;}
+
+        .svg svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .nav-ul {font-size: 11.5px;}
+
+        .nav-li svg {
+            width: 23px;
+            height: 23px;
+        }
+
+        .pfp-friends-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        
+        .arrow-left svg {
+            width: 33px;
+            height: 33px;
+        }
+
+        .acctepted {font-size: 15px;}
+
+        .name {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .time {
+            margin-left: 7px;
+            font-size: 12.5px;
+        }
+
+        .discution-info svg {
+            width: 17px;
+            height: 17px;
+        }
+
+        .count-people {font-size: 14px;}
+
+        .pfp-people-wrapper {
+            width: 25px;
+            height: 25px;
+        }
+        
+        .more-people {font-size: 14px;}
+
+        .more-info {font-size: 15px;}
+
+        .more-info-img-wrapper {
+            width: 100%;
+            height: 155px;
+        }
+
+        .more-info-2 {font-size: 13px;}
+
+        .anime-info-2 {margin: 50px -5px 0 20px;}
+
+        .anime-info-2 a {
+            padding: 2px 5px 2px 5px;
+            font-size: 14px;
+        }
+
+        .img-edit {
+            width: 21px;
+            height: 21px;
+        }
+        
+        .img-edit-add {
+            width: 25px;
+            height: 25px;
+        }
+
+        .img-news {
+            width: 22px;
+            height: 22px;
+        }
+
+        .count-edit {
+            padding: 2px 8px 2px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        
+        .btn-reactions {
+            width: 33px;
+            height: 33px;
+        }
+
+        .reaction {font-size: 12px;}
+
+        .years h3 {font-size: 22px;} 
+
+        .years-seasons span {font-size: 17px;}
+
+        .img-wrp-mylist {
+            width: 90px;
+            height: 140px;
+        }
+
+        .img-wrp-mylist img {
+            width: 90px;
+            height: 140px;
+        }
+
+        .title-serie {font-size: 17.2px;}
+
+        .st {font-size: 15.4px;}
+        
+        .mylist-dtb p {font-size: 16.2px;}
+
+        .wrp-right button svg {
+            width: 33px;
+            height: 33px;
+        }
+
+        .wrp-right button {margin-bottom: 0px;}
+
+        .flt-bottom {
+            left: 104px;
+            right: 68px;
+        }
+    }
+
+    @media only screen and (max-width: 390px) {
+        .article-stats button{top: -95px;}
+        
+        .article-stats button svg {
+            width: 19px;
+            height: 19px;
+        }
+        
+        .score {
+            width: 80px;
+            height: 40px;
+            top: -95px;
+        }
+        
+        .nota {
+            font-size: 13px;
+            margin: 2px 0 0 9px;
+        }
+        
+        .members {font-size: 13px;}
+
+        .members svg {
+            width: 13px;
+            height: 13px;
+        }
+
+        .article-seasonal p:nth-child(3) {margin-bottom: 10px;}
+    }
+
+    @media only screen and (max-width: 360px) {
+        .margin-right {margin-right: 22px;}
+
+        .seasonal-stats {font-size: 15px;}
+
+        .nav-ul-seasonal a {font-size: 15px;}
+
+        .nav-ul-mylist a {font-size: 15px;}
+
+        .stats :nth-child(1) {font-size: 13.5px;}
+
+        .stats :nth-child(2) {font-size: 16px;}
+
+        .stats svg:nth-child(1) {
+            width: 13px;
+            height: 13px;
+        }
+
+        #stats-li-svg {
+            width: 16;
+            height: 16px;
+        }
+
+        #stats-li-svg-2 {
+            width: 20px;
+            height: 20px;
+        }
+
+        .dropdown-menu-2 {
+            margin-left: -59px;
+            width: 125px;
+        }
+
+        .dropdown-menu-3 {
+            width: 180px;
+            margin-left: -141px;
+        }
+
+        .dropdown-li input {
+            width: 15px;
+            height: 15px;
+        }
+
+        .years h3 {font-size: 19.5px;} 
+
+        .years-seasons span {font-size: 14px;}
+
+        .img-wrp-mylist {
+            width: 80px;
+            height: 124px;
+        }
+
+        .img-wrp-mylist img {
+            width: 80px;
+            height: 124px;
+        }
+
+        .title-serie {font-size: 16.6px;}
+
+        .st {font-size: 15px;}
+        
+        .mylist-dtb p {font-size: 15.2px;}
+
+        .wrp-right button {margin-bottom: 3px;}
+
+        .wrp-right button svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        .flt-bottom {
+            left: 94px;
+            right: 62px;
+        }
+
+        .wrp-right-px {margin-bottom: -3px;}
+
+        .progress-bar-green{height: 11px;}
+        
+        .progress-bar-blue{height: 11px;}
+        
+        .progress-bar-yellow{height: 11px;}
+        
+        .progress-bar-red{height: 11px;}
+        
+        .progress-bar-gray{height: 11px;}
+
+        .wrp-btn-swt {padding: 5px 16px 5px 16px;}
+
+        .btn-swt-actived-a, .btn-swt-actived-m {padding: 12px;}
+
+        .btn-swt-actived-a {right: 34.5px;}
+
+        .btn-swt-actived-m {right: 3px;}
+
+        .categ-anime {
+            margin: 0 12.5px 0 -6px;
+            font-size: 14.5px;
+        }
+
+        .categ-manga {
+            margin: 0 -7px 0 9px;
+            font-size: 14.5px;
+        }
+
+        .logo-mal-resize {margin-left: 35px;}
+    }
+
+    @media only screen and (max-width: 340px) {
+        .logo-pfp-wrapper {
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+        }
+        
+        .logo-mal-mobile {
+            width: 38px;
+            height: 38px;
+        }
+
+        .logo-mal-resize {margin-left: 37px;}
+        
+        .header {
+            margin: 0 14px 0 14px;
+            padding: 4px 0 2px 0;
+        }
+        
+        .logo-notifications-wrapper svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .section-wrapper span {font-size: 14.5px;}
+
+        .img-discover-wrapper {
+            width: 90px;
+            height: 130px;
+        }
+
+        .article-discover span {font-size: 13px;}
+
+        .logo-img {
+            width: 75px;
+            height: 100px;
+        } 
+
+        .search-wrapper h4 {font-size: 16.7px;}
+
+        .search,.search-discover {
+            padding: 4px 0 4px 0;
+            margin-bottom: 15px;
+        }
+
+        input[type=text] {font-size: 16.5px;}
+
+        .svg svg {
+            width: 15px;
+            height: 15px;
+        }
+
+        .nav-ul {font-size: 11px;}
+
+        .nav-li svg {
+            width: 21px;
+            height: 21px;
+        }
+
+        .seasonal-stats {font-size: 14.5px;}
+
+        .nav-ul-seasonal a {font-size: 14px;}
+
+        .nav-ul-mylist a {font-size: 14px;}
+
+        .pfp-friends-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-left: 6px;
+        }
+        
+        .arrow-left svg {
+            width: 31px;
+            height: 31px;
+        }
+
+        .acctepted {font-size: 13.5px;}
+
+        .name {
+            font-weight: 700;
+            font-size: 12.5px;
+        }
+
+        .time {
+            margin-left: 7px;
+            font-size: 11px;
+        }
+
+        .discution-info svg {
+            width: 16.5px;
+            height: 16.5px;
+        }
+
+        .count-people {font-size: 14px;}
+
+        .pfp-people-wrapper {
+            width: 23px;
+            height: 23px;
+        }
+        
+        .more-people {font-size: 13.5px}
+
+        .more-info {font-size: 12.5px;}
+
+        .more-info-img-wrapper {
+            width: 100%;
+            height: 145px;
+        }
+
+        .more-info-2 {font-size: 11.5px;}
+
+        .anime-info-2 {margin: 40px -5px 0 20px;}
+
+        .anime-info-2 a {
+            padding: 2px 5px 2px 5px;
+            font-size: 11px;
+        }
+
+        .img-edit {
+            width: 19px;
+            height: 19px;
+        }
+        
+        .img-edit-add {
+            width: 23px;
+            height: 23px;
+        }
+
+        .img-news {
+            width: 20px;
+            height: 20px;
+        }
+
+        .count-edit {
+            padding: 2px 8px 2px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        
+        .btn-reactions {
+            width: 29px;
+            height: 29px;
+        }
+
+        .reaction {font-size: 12px;}
+    }
+
+    @media only screen and (max-width:320px) {
+        .content-seasonal {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        }
+
+        .article-seasonal p:nth-child(2) {font-size: 13px;}
+
+        .article-seasonal p:nth-child(3) {font-size: 13px;}
+
+        .article-stats button{ top: -89px;}
+        
+        .score {top: -89px;}
+
+        .img-wrp-mylist {
+            width: 73px;
+            height: 115px;
+        }
+
+        .img-wrp-mylist img {
+            width: 73px;
+            height: 115px;
+        }
+
+        .title-serie {font-size: 15px;}
+
+        .st {font-size: 13.5px;}
+        
+        .mylist-dtb p {font-size: 14.3px;}
+
+        .wrp-right button {margin-bottom: 3px;}
+
+        .wrp-right button svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .flt-bottom {
+            left: 86px;
+            right: 57px;
+        }
+
+        .wrp-right-px {margin-bottom: -1px;}
+
+        .wrp-right-px {margin-bottom: -3px;}
+
+        .progress-bar-green{height: 9.6px;}
+        
+        .progress-bar-blue{height: 9.6px;}
+        
+        .progress-bar-yellow{height: 9.6px;}
+        
+        .progress-bar-red{height: 9.6px;}
+        
+        .progress-bar-gray{height: 9.6px;}
+    }
+
+    @media only screen and (max-width:300px) {
+        .seasonal-stats {font-size: 13.5px;}
+
+        .nav-ul-seasonal a {font-size: 13px;}
+
+        .nav-ul-mylist a {font-size: 13px;}
+
+        .article-stats button{top: -85px;}
+        
+        .article-stats button svg {
+            width: 18px;
+            height: 18px;
+        }
+        
+        .score {
+            width: 73px;
+            height: 36px;
+            top: -85px;
+        }
+        
+        .nota {
+            font-size: 11px;
+            margin: 2px 0 0 9px;
+        }
+        
+        .members {font-size: 11px;}
+
+        .members svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        .years h3 {font-size: 17px;} 
+
+        .years-seasons span {font-size: 12px;}
+    }
+
+    @media only screen and (max-width: 290px) {
+        .logo-pfp-wrapper {
+            width: 28px;
+            height: 28px;
+        }
+        
+        .logo-mal-mobile {
+            width: 32px;
+            height: 32px;
+        }
+        
+        .header {
+            margin: 0 14px 0 14px;
+            padding: 4px 0 2px 0;
+        }
+        
+        .logo-notifications-wrapper svg {
+            width: 21px;
+            height: 21px;
+        }
+
+        .section-wrapper span {font-size: 14px;}
+
+        .img-discover-wrapper {
+            width: 80px;
+            height: 120px;
+        }
+
+        .article-discover span {font-size: 12px;}
+
+        .logo-img {
+            width: 75px;
+            height: 95px;
+        } 
+
+        .search,.search-discover {
+            padding: 3px 0 3px 0;
+            margin-bottom: 15px;
+        }
+
+        .search-wrapper h4 {font-size: 15.7px;}
+
+        input[type=text] {font-size: 16px;}
+
+        .svg svg {
+            width: 13.5px;
+            height: 13.5px;
+        }
+
+        .nav-ul {font-size: 10px;}
+
+        .nav-li svg {
+            width: 19px;
+            height: 19px;
+        }
+
+        .pfp-friends-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+
+        .seasonal-stats {font-size: 12.5px;}
+
+        .nav-ul-seasonal a {font-size: 12px;}
+
+        .nav-ul-mylist a {font-size: 12px;}
+
+        .arrow-left svg {
+            width: 29px;
+            height: 29px;
+        }
+
+        .acctepted {font-size: 13px;}
+
+        .name {
+            font-weight: 700;
+            font-size: 12.5px;
+        }
+
+        .time {
+            margin-left: 7px;
+            font-size: 11px;
+        }
+
+        .discution-info svg {
+            width: 15.5px;
+            height: 15.5px;
+        }
+
+        .count-people {font-size: 13px;}
+
+        .pfp-people-wrapper {
+            width: 21px;
+            height: 21px;
+        }
+        
+        .more-people {font-size: 13px;}
+
+        .more-info {font-size: 11.5px;}
+
+        .more-info-img-wrapper {
+            width: 100%;
+            height: 135px;
+        }
+
+        .more-info-2 {font-size: 10px;}
+
+        .anime-info-2 {margin: 30px -5px 0 20px;}
+
+        .anime-info-2 a {
+            padding: 2px 5px 2px 5px;
+            font-size: 10px;
+        }
+
+        .img-edit {
+            width: 17px;
+            height: 17px;
+        }
+        
+        .img-edit-add {
+            width: 21px;
+            height: 21px;
+        }
+
+        .img-news {
+            width: 18px;
+            height: 18px;
+        }
+
+        .count-edit {
+            padding: 2px 8px 2px 8px;
+            font-size: 11px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        
+        .btn-reactions {
+            width: 26px;
+            height: 26px;
+        }
+
+        .reaction {font-size: 11px;}
+
+        .img-wrp-mylist {
+            width: 68px;
+            height: 103px;
+        }
+
+        .img-wrp-mylist img {
+            width: 68px;
+            height: 103px;
+        }
+
+        .title-serie {font-size: 13.5px;}
+
+        .st {font-size: 11.5px;}
+        
+        .mylist-dtb p {font-size: 12.5px;}
+
+        .wrp-right button svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .wrp-right button {margin-bottom: 1px;}
+
+        .flt-bottom {
+            left: 81px;
+            right: 55px;
+        }
+
+        .wrp-right-px {margin-bottom: -3px;}
+
+        .progress-bar-green{height: 8.8px;}
+        
+        .progress-bar-blue{height: 8.8px;}
+        
+        .progress-bar-yellow{height: 8.8px;}
+        
+        .progress-bar-red{height: 8.8px;}
+        
+        .progress-bar-gray{height: 8.8px;}
+
+
+        .wrp-btn-swt {padding: 3px 14px 3px 14px;}
+
+        .btn-swt-actived-a, .btn-swt-actived-m {padding: 10px;}
+
+        .btn-swt-actived-a {right: 34px;}
+
+        .btn-swt-actived-m {right: 2px;}
+
+        .categ-anime {
+            margin: 0 12.5px 0 -6px;
+            font-size: 14px;
+        }
+
+        .categ-manga {
+            margin: 0 -7px 0 9px;
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 280px) {
+        .margin-right {margin-right: 15px;}
+
+        .logo-pfp-wrapper {
+            width: 25px;
+            height: 25px;
+        }
+        
+        .logo-mal-mobile {
+            width: 29px;
+            height: 29px;
+        }
+
+        .logo-mal-resize {margin-left: 38px;}
+        
+        .header {
+            margin: 0 14px 0 14px;
+            padding: 3px 0 1px 0;
+        }
+        
+        .logo-notifications-wrapper svg {
+            width: 19px;
+            height: 19px;
+        }
+
+        .section-wrapper span {font-size: 13px;}
+
+        .img-discover-wrapper {
+            width: 70px;
+            height: 110px;
+        }
+
+        .article-discover span {font-size: 11.5px;}
+
+        .stats :nth-child(1) {font-size: 12px;}
+
+        .stats :nth-child(2) {font-size: 15px;}
+
+        .stats svg:nth-child(1) {
+            width: 12px;
+            height: 12px;
+        }
+        
+        .stats svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .logo-img {
+            width: 65px;
+            height: 85px;
+        } 
+
+        .search-wrapper h4 {font-size: 15.4px;}
+
+        .search,.search-discover {
+            padding: 2px 0 2px 0;
+            margin-bottom: 15px;
+        }
+
+        input[type=text] {font-size: 15px;}
+
+        .nav-ul {font-size: 9px;}
+
+        .nav-li svg {
+            width: 17px;
+            height: 17px;
+        }
+
+        .pfp-friends-img {
+            width: 55px;
+            height: 55px;
+            margin-left: 10px;
+        }
+        
+        .arrow-left svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .acctepted {font-size: 12px;}
+
+        .name {
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .time {
+            margin-left: 7px;
+            font-size: 11px;
+        }
+
+        .discution-info svg {
+            width: 14.5px;
+            height: 14.5px;
+        }
+
+        .count-people {font-size: 12.5px;}
+
+        .pfp-people-wrapper {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .more-people {font-size: 11.5px;}
+
+        .more-info {font-size: 12.3px;}
+
+        .more-info-img-wrapper {
+            width: 100%;
+            height: 130px;
+        }
+
+        .more-info-2 {font-size: 11px;}
+
+        .anime-info-2 {margin: 30px -5px 0 20px;}
+
+        .anime-info-2 a {
+            padding: 2px 5px 2px 5px;
+            font-size: 10px;
+        }
+
+        .img-edit {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .img-edit-add {
+            width: 20px;
+            height: 20px;
+        }
+
+        .img-news {
+            width: 17px;
+            height: 17px;
+        }
+
+        .count-edit {
+            padding: 2px 8px 2px 8px;
+            font-size: 9.5px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        
+        .btn-reactions {
+            width: 23px;
+            height: 23px;
+        }
+
+        .reaction {font-size: 9.5px;}
+
+        .dropdown-menu-2 {
+            margin-left: -54px;
+            width: 120px;
+        }
+
+        .dropdown-menu-2 input {
+            width: 14px;
+            height: 14px;
+        }
+    
+        .dropdown-menu-3 {
+            width: 170px;
+            margin-left: -131px;
+        }
+
+        .dropdown-menu-3 input {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAnimeList Mobile - Seasonal - This Season</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        
+    <!-- HEADER - - - HEADER - - - HEADER -->
+
+    <header class="header-wrapper">
+        <div class="header">
+            <ul class="header-ul">
+                <li class="header-li">
+                    <div class="logo-pfp-wrapper header-li">
+                        <img src="../resources/logo-pfp.jpg" alt="logo-pfp">
+                        </div>
+                    </li>
+                    <li class="header-li">
+                        <div class="logo-mobile-wrapper">
+                           <img class="logo-mal-mobile logo-mal-resize" src="../resources/logo.png" alt="logo-mal">
+                        </div>
+                    </li>
+                    <a href=""><li>
+                        <div class="wrp-btn-swt">
+                            <div class="categ-anime c-blue2">A</div>
+                            <div class="btn-swt-actived-a"></div>
+                            <div class="categ-manga">M</div>
+                        </div>
+                    </li></a>
+                </ul>
+            </div>
+        <nav class="nav-mylist-wrapper">
+            <ul class="nav-ul-mylist">
+                <a href="#"><li class="nav-li-mylist mylist-stats">All</li></a>
+            </ul>
+            <ul class="nav-ul-mylist">
+                <a href=""><li class="nav-li-mylist mylist-light-gray">Watching</li></a>
+            </ul>
+            <ul class="nav-ul-mylist">
+                <a href=""><li class="nav-li-mylist mylist-light-gray">Completed</li></a>
+            </ul>
+            <ul class="nav-ul-mylist">
+                <a href=""><li class="nav-li-mylist mylist-light-gray">On Hold</li></a>
+            </ul>
+            <ul class="nav-ul-mylist">
+                <a href=""><li class="nav-li-mylist mylist-light-gray">Dropped</li></a>
+            </ul>
+            <ul class="nav-ul-mylist">
+                <a href=""><li class="nav-li-mylist mylist-light-gray">Plan to Watch</li></a>
+            </ul>
+            </ul>
+        </nav>
+        <div class="stats-wrapper">
+            <div class="stats">
+                <ul class="stats-ul">
+                    <li class="stats-li">All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+                        <ul class="dropdown-menu drp-dwn-mn">
+                           <li class="dropdown-li">All</li>
+                           <li class="dropdown-li">TV</li>
+                           <li class="dropdown-li">ONA</li>
+                           <li class="dropdown-li">OVA</li>
+                           <li class="dropdown-li">Movie</li>
+                           <li class="dropdown-li">Special</li>
+                           <li class="dropdown-li">CM</li>
+                           <li class="dropdown-li">PV</li>
+                           <li class="dropdown-li">TV Special</li>
+                        </ul>
+                    </li>
+                    <li class="stats-li c-blue margin-right"><svg id="stats-li-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><path fill="currentColor" d="M2 13h6v8H2zM9 3h6v18H9zm7 5h6v13h-6z"/></g></svg>693 Entries</li>
+                    <li class="stats-li"><svg id="stats-li-svg-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/></svg>
+                        <ul class="dropdown-menu-3">
+                            <li class="dropdown-li">Status <input type="radio" name="checkboxes" class="checkbox-round" checked></li>
+                            <li class="dropdown-li">Alphabetical <input type="radio" name="checkboxes" class="checkbox-round"></li>
+                            <li class="dropdown-li">Score <input type="radio" name="checkboxes" class="checkbox-round"></li>
+                            <li class="dropdown-li">Watched Episodes <input type="radio" name="checkboxes" class="checkbox-round"></li>
+                            <li class="dropdown-li">Air Start Date <input type="radio" name="checkboxes" class="checkbox-round"></li>
+                            <li class="dropdown-li">Last Updated <input type="radio" name="checkboxes" class="checkbox-round"></li>
+                         </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        
+    <!-- CONTENT - - - CONTENT - - - CONTENT -->
+
+    <div class="content-mylist-wrapper">
+        <a href="https://myanimelist.net/anime/34566/Boruto__Naruto_Next_Generations?q=boruto&cat=anime">  <!-- WATCHING -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Boruto Naruto Next Generations.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Boruto: Naruto Next Generations</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Spring 2017</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-green" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p>&#9733; 6</p>
+                                <p><span>242</span> / 293 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/53889/Ao_no_Exorcist__Shimane_Illuminati-hen?q=ao%20no%20ex&cat=anime">  <!-- AIRING -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Ao no Exorcist Shimane Illuminati-hen.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Ao no Exorcist: Shimane Illuminati-hen</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Winter 2024</span>
+                            <span class="st">Airing</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-gray" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p></p>
+                                <p><span>0</span> / 12 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/49387/Vinland_Saga_Season_2?q=VIN&cat=anime">  <!-- WATCHING -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Vinland Saga Season 2.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Vinland Saga Season 2</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Winter 2023</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-green" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:13%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p></p>
+                                <p><span>4</span> / 24 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/55690/Boku_no_Kokoro_no_Yabai_Yatsu_Season_2">  <!-- AIRING -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Boku no Kokoro no Yabai Yatsu Season 2.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Boku no Kokoro no Yabai Yatsu Season 2</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Winter 2024</span>
+                            <span class="st">Airing</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-gray" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p></p>
+                                <p><span>0</span> / 12 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/53450/Xian_Wang_de_Richang_Shenghuo_4?q=xian%20wang&cat=anime">  <!-- AIRING -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Xian Wang de Richang Shenghuo 4.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Xian Wang de Richang Shenghuo 4</p>
+                        <div class="wrapper-st">
+                            <span class="st">ONA, 2024</span>
+                            <span class="st">Airing</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-gray" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p></p>
+                                <p><span>0</span> / ?? ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/41380/100-man_no_Inochi_no_Ue_ni_Ore_wa_Tatteiru?q=100-MAN%20NO&cat=anime">  <!-- COMPLETED -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/100-man no Inochi no Ue ni Ore wa Tatteiru.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">100-man no Inochi no Ue ni Ore wa Tatteiru</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Fall 2020</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-blue" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p>&#9733; 8</p>
+                                <p><span>12</span> / 12 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/44881/100-man_no_Inochi_no_Ue_ni_Ore_wa_Tatteiru_2nd_Season">  <!-- COMPLETED -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/100-man no Inochi no Ue ni Ore wa Tatteiru 2nd Season.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">100-man no Inochi no Ue ni Ore wa Tatteiru 2nd Season</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Summer 2021</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-blue" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p>&#9733; 8</p>
+                                <p><span>12</span> / 12 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/11759/Accel_World?q=accel&cat=anime">  <!-- COMPLETED -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Accel World.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Accel World</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Spring 2012</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-blue" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p>&#9733; 8</p>
+                                <p><span>24</span> / 24 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/30/Shinseiki_Evangelion?q=shinseiki&cat=anime">  <!-- ON HOLD -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Shinseiki Evangelion.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Shinseiki Evangelion</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Fall 1995</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-yellow" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p></p>
+                                <p><span>10</span> / 26 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/8086/Densetsu_no_Yuusha_no_Densetsu?q=denset&cat=anime">  <!-- DROPPED -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Densetsu no Yuusha no Densetsu.jpg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Densetsu no Yuusha no Densetsu</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV, Summer 2010</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-red" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p>&#9733; 5</p>
+                                <p><span>8</span> / 24 ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg></button>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+        <a href="https://myanimelist.net/anime/56784/Bleach__Sennen_Kessen-hen_-_Soukoku-tan">  <!-- PLAN TO WATCH -->
+            <article class="article-mylist">
+                <div class="wrp-left">
+                    <div class="img-wrp-mylist">
+                        <img src="../resources/Bleach Sennen Kessen-hen.jpeg" alt="MAL">
+                    </div>
+                    <div class="flt-right">
+                        <p class="title-serie">Bleach: Sennen Kessen-hen - Soukoku-tan</p>
+                        <div class="wrapper-st">
+                            <span class="st">TV</span>
+                            <span class="st">Not Yet Aired</span>
+                        </div>
+                        <div class="flt-bottom">
+                            <div class="progress">
+                                <div class="progress-bar-gray" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                              </div>
+                            <div class="mylist-dtb">
+                                <p></p>
+                                <p><span>0</span> / ?? ep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrp-right">
+                      <button><svg class="wrp-right-px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                </div>
+            </article>
+        </a>
+    </div>
+
+    <!-- NAV - - - NAV - - - NAV - - - NAV -->
+
+    <div class="nav-wrapper">
+        <nav class="nav">
+            <div class="nav-ul">
+                <li class="nav-li">
+                    <a href="file:///C:/Users/Valik/Desktop/VS%20Code/MyAnimeList%20track-mobile/html/Home.html"><div class="home light-gray">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                          </svg>
+                        <h4>Home</h4>
+                    </div></a>
+                </li>
+                <li class="nav-li">
+                    <a href="file:///C:/Users/Valik/Desktop/VS%20Code/MyAnimeList%20track-mobile/html/discussion.html"><div class="discussion light-gray">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                            <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                          </svg>
+                        <h4>Discussion</h4>
+                    </div></a>
+                </li>
+                <li class="nav-li">
+                    <a href="file:///C:/Users/Valik/Desktop/VS%20Code/MyAnimeList%20track-mobile/html/Discover.html"><div class="discover light-gray">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                        <h4>Discover</h4>
+                    </div></a>
+                </li>
+                <li class="nav-li">
+                    <a href="file:///C:/Users/Valik/Desktop/VS%20Code/MyAnimeList%20track-mobile/html/Seasonal%20-%20This%20Season.html"><div class="seasonal light-gray">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
+                          </svg>
+                        <h4>Seasonal</h4>
+                    </div></a>
+                </li>
+                <li class="nav-li">
+                    <a href="#"><div class="mylist white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg>
+                    <h4>My list</h4>
+                </div></a>
+                </li>
+            </div>
+        </nav>
+    </div>
+  </div>
+</body>
+</html>

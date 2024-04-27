@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Shop.ro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body id="top">
+    <div class="container">
+      <div class="wrp-banner">
+          <!-- NAV - - - - NAV - - - - NAV -->
+         <header class="header">
+          <nav class="nav">
+              <ul class="nav-ul-left">
+                  <a href="#"><span class="nav-span-logo">VK SHOP</span></a>
+                  <li class="nav-li-left">
+                    <div class="dropdown">
+                      <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg> Products</button>
+                      <!-- Dropdown content -->
+                      <div class="dropdown-content">
+                        <div class="drop-content">
+                          <div class="articles">
+                            <a href="#">Peripheral</a>
+                            <a href="#">PC Gaming & Office</a>
+                            <a href="#">PC components</a>
+                            <a href="#">Laptop</a>
+                            <a href="#">Laptop components</a>
+                            <a href="#">Mobile</a>
+                            <a href="#">TV, Monitor</a>
+                            <a href="#">Consoles</a>
+                            </div>
+                              <img src="../resources/img-gaming.jpg" alt="img-gaming">
+                        </div>
+                      </div>
+                    </div>
+                </li>
+                  <li class="nav-li-left">Contact Us</li>
+                  <li class="nav-li-left">
+                    <input class="inp-2" placeholder="Search...">
+                  </li>
+              </ul>
+              <ul class="nav-ul-right">
+                  <li class="nav-li-right">
+                      <button class="button" id="form-open">
+                          <svg id="nav-li-right-svg-1" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M723.43 508.6c-54.123 47.75-125.977 77.056-205.163 77.056-80.364 0-153.4-30.259-207.765-79.421C184.05 539.325 105.81 652.308 105.81 787.277v68.782c0 160.968 812.39 160.968 812.39 0v-68.782c-0.005-131.415-74.22-242.509-194.77-278.677z m-205.163 28.13c140.165 0 254.095-109.44 254.095-244.64S658.668 47.218 518.267 47.218c-139.93 0-253.855 109.675-253.855 244.874 0 135.204 113.925 244.639 253.855 244.639z m0 0"/></svg>
+                          Account
+                      </button>
+                  </li>
+                  <li class="nav-li-right ln"></li>
+                  <li class="nav-li-right">
+                      <svg id="nav-li-right-svg-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="ShoppingCart"><rect width="256" height="256" fill="none"></rect><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M184,184H69.81818L41.92162,30.56892A8,8,0,0,0,34.05066,24H16" class="colorStroke000000 svgStroke"></path><circle cx="80" cy="204" r="20" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" class="colorStroke000000 svgStroke"></circle><circle cx="184" cy="204" r="20" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" class="colorStroke000000 svgStroke"></circle><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M62.54543,144H188.10132a16,16,0,0,0,15.74192-13.13783L216,64H48" class="colorStroke000000 svgStroke"></path></svg>
+                      <div id="count">0</div>
+                      <div class="p-rotate">
+                        <span>$</span> <span>250,-</span>
+                      </div>
+                  </li>
+              </ul>
+          </nav>
+         </header>
+        <!-- NAV - - - - NAV - - - - NAV -->
+
+        <!-- LOGIN / REGISTER / LOGIN / REGISTER -->
+    <section class="home">
+        <div class="form_container">
+          <i class="uil uil-times form_close"></i>
+          <!-- Login From -->
+          <div class="form login_form">
+            <form action="#">
+              <h2>Login</h2>
+              <div class="input_box">
+                <input type="email" placeholder="Enter your email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Enter your password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password?</a>
+              </div>
+              <button class="button">Login</button>
+              <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+            </form>
+          </div>
+          <!-- Signup From -->
+          <div class="form signup_form">
+            <form action="#">
+              <h2>Signup</h2>
+              <div class="input_box">
+                <input type="username" placeholder="Enter your name" required />
+                <i class="uil uil-user user"></i>
+              </div>
+              <div class="input_box">
+                <input type="email" placeholder="Enter your email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Create password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Confirm password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <button class="button">Signup Now</button>
+              <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- LOGIN / REGISTER / LOGIN / REGISTER -->
+
+      <!-- SOCIAL MEDIA - - - -  SOCIAL MEDIA -->
+      <div class="wrp-social-media">
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+          </svg></a><br>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg></a><br>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg></a>
+     </div>
+     <!-- SOCIAL MEDIA - - - -  SOCIAL MEDIA -->
+
+     <!-- BANNER - - - - BANNER - - - - BANNER -->
+      <div class="sliders" >
+        <div class="banner active">
+          <div class="wrp-bg-text">
+            <span>Headset</span>
+          </div>
+          <div class="item-img-1">
+            <img class="item-img" src="../resources/Headset - HyperX Cloud.png" alt="Headset - HyperX Cloud">
+          </div>
+          <div class="text">
+            <a href=""><span>Headset ─ HyperX Cloud</span></a>
+            <div class="price">
+              <span>$</span><span>100,</span>
+              <span>$</span><span>76,-</span>
+            </div>
+          </div>
+          <div class="btn-purchase">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+            <p>add to cart</p>
+          </div>
+          <div class="slider-number mg-right">
+            <span id="change-number">1</span>
+            <div class="slider-ln"></div>
+            <span id="const-number">4</span>
+          </div>
+        </div>
+
+        <div class="banner">
+          <div class="wrp-bg-text">
+            <span>keyboard</span>
+          </div>
+          <div class="item-img-1">
+            <img class="item-img" src="../resources/test.png" alt="Headset - HyperX Cloud">
+          </div>
+          <div class="text">
+            <a href=""><span>Keyboard ─ Marvo KG903</span></a>
+            <div class="price">
+              <span>$</span><span>45,</span>
+              <span>$</span><span>32,-</span>
+            </div>
+          </div>
+          <div class="btn-purchase">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+            <p>add to cart</p>
+          </div>
+          <div class="slider-number">
+            <span id="change-number">2</span>
+            <div class="slider-ln"></div>
+            <span id="const-number">4</span>
+          </div>
+        </div>
+
+        <div class="banner">
+          <div class="wrp-bg-text">
+            <span>mouse</span>
+          </div>
+          <div class="item-img-1">
+            <img class="item-img" src="../resources/Mouse - G102.png" alt="Mouse - Logitech G102">
+          </div>
+          <div class="text">
+            <a href=""><span>Mouse - Logitech G102</span></a>
+            <div class="price">
+              <span>$</span><span>40,</span>
+              <span>$</span><span>30,-</span>
+            </div>
+          </div>
+          <div class="btn-purchase">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+            <p>add to cart</p>
+          </div>
+          <div class="slider-number">
+            <span id="change-number">3</span>
+            <div class="slider-ln"></div>
+            <span id="const-number">4</span>
+          </div>
+        </div>
+      </div>
+      <!-- BANNER - - - - BANNER - - - - BANNER -->
+
+      <div class="arrow" id="arrow">
+        <button class="next"><svg fill="#ffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.002 330.002" xml:space="preserve" stroke="#ffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.320008"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_226_" d="M233.252,155.997L120.752,6.001c-4.972-6.628-14.372-7.97-21-3c-6.628,4.971-7.971,14.373-3,21 l105.75,140.997L96.752,306.001c-4.971,6.627-3.627,16.03,3,21c2.698,2.024,5.856,3.001,8.988,3.001 c4.561,0,9.065-2.072,12.012-6.001l112.5-150.004C237.252,168.664,237.252,161.33,233.252,155.997z"></path> </g></svg></button>
+        <button class="prev"><svg fill="#72748e" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.002 330.002" xml:space="preserve" stroke="#72748e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.320008"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_226_" d="M233.252,155.997L120.752,6.001c-4.972-6.628-14.372-7.97-21-3c-6.628,4.971-7.971,14.373-3,21 l105.75,140.997L96.752,306.001c-4.971,6.627-3.627,16.03,3,21c2.698,2.024,5.856,3.001,8.988,3.001 c4.561,0,9.065-2.072,12.012-6.001l112.5-150.004C237.252,168.664,237.252,161.33,233.252,155.997z"></path> </g></svg></button>
+      </div>
+      <div class="arrow-hidden-scroll">
+        <svg fill="#ffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.002 330.002" xml:space="preserve" stroke="#ffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.320008"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_226_" d="M233.252,155.997L120.752,6.001c-4.972-6.628-14.372-7.97-21-3c-6.628,4.971-7.971,14.373-3,21 l105.75,140.997L96.752,306.001c-4.971,6.627-3.627,16.03,3,21c2.698,2.024,5.856,3.001,8.988,3.001 c4.561,0,9.065-2.072,12.012-6.001l112.5-150.004C237.252,168.664,237.252,161.33,233.252,155.997z"></path> </g></svg>
+      </div>
+      <div class="arrow-appear-scroll hide" id="arrow-appear-scroll">
+        <a id="scroll-up" class="scroll-up" href="#top" onclick="scrollToTop(); return false">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+      <!-- CART-SHOP - - - - CART-SHOP - - - - CART-SHOP -->
+      <!-- <div class="wrp-cart-shop">
+        <div class="cart-shop">
+            <div class="top-head">
+              my cart
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </div>
+            <div class="wrp-article">
+              <div class="inf-text">
+                <p>Your cart is empty</p>
+              </div>
+              <article class="article">
+                <a href=""><div class="product-img">
+                  <img src="../resources/Headset - HyperX Cloud.png" alt="img-product">
+                </div>
+                <div class="flt-right">
+                  <div class="name-product">
+                    HyperX Cloud
+                  </div></a>
+                  <div class="trash">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                      <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                  </div>
+                  <div class="btn-prc">
+                    <div class="count-product">
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                      </svg></button>
+                      <span>1</span>
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg></button>
+                    </div>
+                    <div class="price-product">
+                      <span>$</span>76
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="purchase-zone">
+              <a href=""><div class="btn-pay">
+                 <div><span>$</span><span>364.00</span></div>
+                 <span>pay</span>
+              </div></a>
+            </div>
+          </div>
+      </div> -->
+
+      
+      <!-- CART-SHOP - - - - CART-SHOP - - - - CART-SHOP -->
+      
+    </div>
+</body>
+<script src="../js/index.js"></script>
+</html>
