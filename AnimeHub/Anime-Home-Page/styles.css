@@ -939,6 +939,26 @@ header {
     }
 }
 
+@media screen and (max-width: 1500px) {
+    .slider .list .item .content {
+        bottom: 29%;
+        max-width: 450px;
+    }
+
+    /* .articles-wrp a {
+        width: 195px;
+    }
+
+    .article {
+        width: 195px;
+    }
+    
+    .cover-article {
+        width: 180px;
+        height: 280px;
+    } */
+}
+
 @media screen and (max-width: 1370px) {
     .tr-li, .sp a {
         font-size: 16.5px;
