@@ -42,7 +42,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200vh;
+  height: 120vh;
 }
 
 .nav {
@@ -205,8 +205,13 @@ body {
 }
 
 .page-content-wrp {
+  /* display: none; */
   color: white;
 }
+
+/* .page-content-wrp.active {
+  display: block;
+} */
 
 .about-wrp {
   position: relative;

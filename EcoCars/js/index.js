@@ -37,3 +37,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// AFISARE CONTENT CAND APESI PE "START"
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     const startBtn = document.querySelector('.start-btn');
+//     const pageContentWrp = document.querySelector('.page-content-wrp');
+//     const aboutWrp = document.querySelector('.about-wrp');
+  
+//     startBtn.addEventListener('click', () => {
+//       // Adaugă clasa 'active' la 'page-content-wrp'
+//       pageContentWrp.classList.add('active');
+  
+//       // Derulează pagina la secțiunea 'about-wrp'
+//       aboutWrp.scrollIntoView({ behavior: 'smooth' });
+//     });
+//   });  
