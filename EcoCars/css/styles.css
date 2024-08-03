@@ -278,7 +278,7 @@ body {
 
 .btn-about {
   display: inline-block;
-  font-size: 14px;
+  font-size: 15px;
   padding: 10px 20px 10px 20px;
   background-color: rgb(77, 108, 211);
   border-radius: 5px;
@@ -393,5 +393,51 @@ body {
   
   .type-class {
     font-size: 10px;
+  }
+
+  .about-wrp {
+    display: grid;
+    padding: 0 20px 0 20px;
+    gap: 70px;
+    padding-top: 100px;
+  }
+  
+  .img-about {
+    max-width: 340px;
+  }
+  
+  .det-about {
+    width: 180px;
+    height: 73px;
+    left: 210px;
+    top: 285px;
+    padding: 8px 15px 8px 15px;
+  }
+  
+  .det2 {
+    font-size: 12px;
+  }
+
+  .description-about {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img-about {
+    max-width: 300px;
+  }
+
+  .det1 {
+    font-size: 15px;
+  }
+
+  .det-about {
+    width: 160px;
+    height: 73px;
+    left: 175px;
+    top: 260px;
+    padding: 5px 10px 5px 10px;
   }
 }
