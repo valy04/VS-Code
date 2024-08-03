@@ -16,6 +16,26 @@
   font-style: normal;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(39, 35, 50);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(80, 74, 85);
+  border-radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: linear-gradient(0deg, rgba(14, 13, 13, 0.7) 0%, rgba(14, 13, 13, 0.7) 0%), url(../resources/bg-1.jpg);
   background-attachment: fixed;
@@ -26,11 +46,19 @@ body {
 }
 
 .nav {
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20px;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 99;
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.nav.scroll {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .nav-ul a {
@@ -66,14 +94,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 352px;
+  max-width: 355px;
   height: auto;
   margin: 0 auto;
   color: white;
 }
 
 .ds-block {
-  margin-top: 65px;
+  margin-top: 100px;
 }
 
 .hd-h2 {
@@ -161,7 +189,7 @@ body {
   padding: 25px 13px 25px 13px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid rgb(13, 232, 162);
+  border: 2px solid rgb(13, 232, 162);
   box-shadow: 0 0 14px rgb(13, 232, 162);
   cursor: pointer;
   text-transform: uppercase;
@@ -170,4 +198,200 @@ body {
 .start-btn span:hover {
   transition: ease-out 0.2s;
   box-shadow: 0 0 18px rgb(13, 232, 162);
+}
+
+.nv-li-svg, .nv-li-svg, .menu-responsive {
+  display: none;
+}
+
+.page-content-wrp {
+  color: white;
+}
+
+.about-wrp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 70px;
+}
+
+.img-about {
+  max-width: 380px;
+  max-height: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.img-about img {
+  object-fit: contain;
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+}
+
+.det-about {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 180px;
+  left: 200px;
+  bottom: -33px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(87, 87, 87, 0.5);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+}
+
+.det1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.det2 {
+  font-size: 13px;
+  color: rgb(225, 212, 212);
+}
+
+.description-about {
+  width: 400px;
+}
+
+.title-about {
+  font-size: 23px;
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 15px;
+  color: rgb(167, 167, 167);
+  width: 100%;
+  line-height: 20px;
+  margin-bottom: 35px;
+}
+
+.btn-about {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(77, 108, 211);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hdn-li {
+    display: none;
+  }
+
+  .nv-li-svg {
+    display: block;
+  }
+
+  .nv-li-svg svg {
+    display: block;
+    width: 32px;
+    height: 32px;
+    color: white;
+  }
+
+  .menu-responsive {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    inset: 0;
+    background-color: black;
+    z-index: 100;
+  }
+
+  .menu-responsive.active {
+    display: block;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }  
+
+  .btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 101;
+    color: white;
+  }
+
+  .menu-responsive-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .menu-responsive-li {
+    display: block;
+    margin: 15px 0;
+    font-size: 25px;
+    padding: 5px 15px;
+  }
+  
+
+  .btn-close svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .start-page {
+    width: 254px;
+  }
+
+  .hd-h2 {
+    font-size: 18px;
+  }
+
+  .hd-span {
+    font-size: 15.5px;
+  }
+
+  .hd-type-car svg {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .hd-type-car {
+    font-size: 13.5px;
+  }
+
+  .img-car-home {
+    margin-top: 40px;
+  }
+
+  .wrp-home-car-stats {
+    margin-top: 40px;
+  }
+  
+  .wrp-home-car-stats svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .rezult {
+    font-size: 19px;
+  }
+  
+  .type-class {
+    font-size: 10px;
+  }
 }
