@@ -1,0 +1,129 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.form-group {
+    background-color: rgb(240, 240, 240);
+    padding: 10px 25px 20px 25px;
+    margin: 10px 25px 0 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-h1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.input-style {
+    border: 2px solid rgb(108, 106, 106);
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 12px;
+    font-size: 16px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-adauga {
+    padding: 7px 15px 7px 15px;
+    font-size: 16px;
+    background-color: rgb(54, 118, 228);
+    border-radius: 7px;
+    margin-top: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.obiective {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 60px 25px 0 25px;
+}
+
+.article {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 33%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.article:last-child {
+    margin-bottom: 60px;
+}
+
+.prioritate span {
+    display: block;
+    width: 100%;
+    background-color: rgb(199, 199, 199);  
+    font-size: 24px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 8px 25px 8px 25px;
+}
+
+.sarcini {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    font-size: 19px;
+}
+
+.sarcini span {
+    display: inline-block;
+    padding: 10px 25px 8px 25px;
+    width: 100%;
+    cursor: pointer;
+    border-top: 1px solid black;
+}
+
+.sarcini span:hover {
+    background-color: rgb(148, 148, 148);
+}
+
+.sarcini span:last-child:hover {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .obiective {
+        gap: 10px;
+    }
+
+    .prioritate span {
+        font-size: 20px;
+    }
+
+    .sarcini {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .obiective {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .article {
+        width: 100%;
+    }
+}
