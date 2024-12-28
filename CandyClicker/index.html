@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Clicker</title>
+    <link rel="stylesheet" href="../CandyClicker/styles.css">
+</head>
+<body>
+    <div class="game">
+        <div class="clicker-zone">
+            <div class="score">
+                <h1 id="score">0 candy</h1>
+                <h3>per second: 0</h3>
+            </div>
+            <div id="btnCandy" class="candy">
+                <img src="../CandyClicker/resources/pngwing.com.png" alt="candy">
+            </div>
+        </div>
+        <div class="shop">
+            <article id="buyCursor" class="article">
+                <div class="art-left">
+                    <img class="img-prez" src="../CandyClicker/resources/cursor-candy2.png" alt="auto-click">
+                    <div class="name-price">
+                        <div class="type-art">
+                            <span>Cursor</span>
+                        </div>
+                        <div class="price">
+                            <img src="../CandyClicker/resources/pngwing.com.png" alt="$">
+                            <span id="priceCursor">5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-right">
+                    <span id="countUpgradeCursor" class="upgrade-count">0</span>
+                </div>
+            </article>
+            <article id="buyAutoClick" class="article">
+                <div class="art-left">
+                    <img class="img-prez" src="../CandyClicker/resources/minimal-cotton-candy-cursor-pack.png" alt="auto-click">
+                    <div class="name-price">
+                        <div class="type-art">
+                            <span>Auto click</span>
+                        </div>
+                        <div class="price">
+                            <img src="../CandyClicker/resources/pngwing.com.png" alt="$">
+                            <span id="priceAutoClick">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-right">
+                    <span id="countUpgradeAutoClick" class="upgrade-count">0</span>
+                </div>
+            </article>
+            <article id="buyCandy" class="article">
+                <div class="art-left">
+                    <img class="img-prez" src="../CandyClicker/resources/auto candy.png" alt="auto-click">
+                    <div class="name-price">
+                        <div class="type-art">
+                            <span>Candy+</span>
+                        </div>
+                        <div class="price">
+                            <img src="../CandyClicker/resources/pngwing.com.png" alt="$">
+                            <span id="priceCandy">1K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-right">
+                    <span id="countUpgradeCandy" class="upgrade-count">0</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+<script src="../CandyClicker/index.js"></script>
+</html>

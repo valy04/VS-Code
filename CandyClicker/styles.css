@@ -1,0 +1,140 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.game {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.clicker-zone {
+    width: 67%;
+    height: 100vh;
+    float: left;
+    background-image: url(../CandyClicker/resources/bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 15px 0 20px 0;
+}
+
+.score h1 {
+    font-size: 40px;
+}
+
+.score h3 {
+    font-size: 22px;
+}
+
+.candy {
+    position: absolute;
+    left: 33%;
+    transform: translate(-50%, 30%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.candy img {
+    width: 330px;
+    height: 330px;
+    animation: tilt 2s infinite;
+}
+
+@keyframes tilt {
+    0%, 100% {
+        transform: rotate(0deg); /* Poziția inițială */
+    }
+    25% {
+        transform: rotate(-5deg); /* Se lasă pe o parte */
+    }
+    50% {
+        transform: rotate(1deg); /* Se lasă pe cealaltă parte */
+    }
+    75% {
+        transform: rotate(-10deg); /* Revine ușor */
+    }
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 33%;
+    padding: 6px 10px 7px 10px;
+    height: 100vh;
+    background-color: rgb(219, 100, 199);
+}
+
+.article {
+    position: relative;
+    padding: 10px;
+    margin: 7px 0;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(233, 137, 212);
+}
+
+.art-left {
+    position: relative;
+    float: left;
+}
+
+.img-prez {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    float: left;
+    user-select: none;
+}
+
+.name-price {
+    float: right;
+    flex-direction: column;
+    margin-left: 7px;
+}
+
+.type-art {
+    font-size: 33px;
+    color: white;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+
+.price img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    user-select: none;
+}
+
+.price span {
+    color: red;
+    margin-left: 5px;
+}
+
+.art-right {
+    float: right;
+    font-size: 50px;
+    margin-right: 15px;
+    margin-top: 6px;
+    color: pink;
+}
