@@ -4,6 +4,7 @@ let autoclickercount = document.getElementById("autoclickercount");
 let btnShop = document.getElementById("btnShop");
 let closeShop = document.getElementById("closeShop");
 let shopMenu = document.getElementById("shopMenu");
+let btnBuyskins = document.getElementById("btnBuyskins");
 
 // - - - - - - - - - - Cursor
 let priceCursorElement = document.getElementById("priceCursor");
@@ -87,6 +88,7 @@ function updatePriceColor() {
     priceCandyfactoryElement.style.color = count >= priceCandyfactory ? "green" : "red";
 }
 
+// - - - - - - - - - - - - Sistem Shop
 btnShop.onclick = function() {
     shopMenu.style.display = "block";
     btnShop.style.display = "none";
@@ -95,9 +97,61 @@ btnShop.onclick = function() {
 
 closeShop.onclick = function() {
     shopMenu.style.display = "none";
-    btnShop.style.display = "block";
+    btnShop.style.display = "inline-block";
     btnCandy.style.display = "block";
 }
+
+const candySkins = [
+    { id: 1, price: 10, imgSrc: "../CandyClicker/resources/candyskin3.png", isOwned: false },
+    { id: 2, price: 1000, imgSrc: "../CandyClicker/resources/candyskin2.png", isOwned: false },
+    { id: 3, price: 2000, imgSrc: "../CandyClicker/resources/candyskin4.png", isOwned: false }
+];
+
+let equippedSkin = null; // Variabilă pentru skin-ul echipat
+const defaultSkin = "../CandyClicker/resources/pngwing.com.png"; // Imaginea implicită
+
+// Funcția pentru gestionarea unui skin (cumpărare/echipare/dezechipare)
+function manageSkin(skin, button) {
+    if (!skin.isOwned) {
+        // Cumpărare skin
+        if (count >= skin.price) {
+            count -= skin.price;
+            skin.isOwned = true; // Marcăm skin-ul ca deținut
+            score.innerText = `${formatNumber(count)} candies`;
+            button.innerText = "Equip"; // Actualizăm butonul
+            button.style = "margin: 23px 0 0 60px";
+            alert(`You purchased the skin!`);
+        } else {
+            alert("Not enough candies!");
+        }
+    } else {
+        // Skin-ul este deja cumpărat - echipare/dezechipare
+        if (equippedSkin === skin) {
+            // Dezechipare
+            equippedSkin = null;
+            btnCandy.querySelector("img").src = defaultSkin; // Revine la imaginea implicită
+            button.innerText = "Equip";
+        } else {
+            // Echipare
+            if (equippedSkin) {
+                // Resetăm butonul pentru skin-ul echipat anterior
+                document.querySelector(`.btn-buy-skin[data-id="${equippedSkin.id}"]`).innerText = "Equip";
+            }
+            equippedSkin = skin;
+            btnCandy.querySelector("img").src = skin.imgSrc; // Schimbă imaginea
+            button.innerText = "Unequip";
+        }
+    }
+    
+    updatePriceColor();
+}
+
+// Asocierea fiecărui buton cu un skin
+document.querySelectorAll(".btn-buy-skin").forEach((button, index) => {
+    button.setAttribute("data-id", candySkins[index].id); // Adaugăm un atribut pentru identificare
+    button.addEventListener("click", () => manageSkin(candySkins[index], button));
+});
+
 
 // Afisarea scorului cu numărul formatat
 btnCandy.onclick = function () {
