@@ -1,5 +1,6 @@
 let btnCandy = document.getElementById("btnCandy");
 let score = document.getElementById("score");
+let autoclickercount = document.getElementById("autoclickercount");
 
 // - - - - - - - - - - Cursor
 let priceCursorElement = document.getElementById("priceCursor");
@@ -16,15 +17,46 @@ let buyCandy = document.getElementById("buyCandy");
 let priceCandyElement = document.getElementById("priceCandy");
 let countUpgradeCandyElement = document.getElementById("countUpgradeCandy");
 
+// - - - - - - - - - - Candy farm
+let buyCandyfarm = document.getElementById("buyCandyfarm");
+let priceCandyfarmElement = document.getElementById("priceCandyfarm");
+let countUpgradeCandyfarmElement = document.getElementById("countUpgradeCandyfarm");
+
+// - - - - - - - - - - Candy mine
+let buyCandymine = document.getElementById("buyCandymine");
+let priceCandymineElement = document.getElementById("priceCandymine");
+let countUpgradeCandymineElement = document.getElementById("countUpgradeCandymine");
+
+// - - - - - - - - - - Candy factory
+let buyCandyfactory = document.getElementById("buyCandyfactory");
+let priceCandyfactoryElement = document.getElementById("priceCandyfactory");
+let countUpgradeCandyfactoryElement = document.getElementById("countUpgradeCandyfactory");
+
+// - - - - - - - - - - - - clicker
 let count = 0;
+let perSecondCount = 0;
 let increment = 1;
+
+// - - - - - - - - - - - - - Price
 let priceCursor = 5;
 let priceAutoClick = 250;
 let priceCandy = 1000;
+let priceCandyfarm = 10000;
+let priceCandymine = 50000;
+let priceCandyfactory = 150000;
+
+// - - - - - - - - - - - AutoClicker
 let autoclickerIncrement = 0;
+let candyfarmIncrement = 0;
+let candyfactoryIncrement = 0;
+
+// - - - - - - - - - Upgrade count
 let countUpgradeCursor = 0;
 let countUpgradeAutoClick = 0;
 let countUpgradeCandy = 0;
+let countUpgradeCandyfarm = 0;
+let countUpgradeCandymine = 0;
+let countUpgradeCandyfactory = 0;
 
 // Functia pentru formatarea numerelor
 function formatNumber(value) {
@@ -39,9 +71,12 @@ function formatNumber(value) {
 
 // Actualizarea culorii prețurilor în funcție de count
 function updatePriceColor() {
-    priceCursorElement.style.color = count >= priceCursor ? "green" : "";
-    priceAutoClickElement.style.color = count >= priceAutoClick ? "green" : "";
-    priceCandyElement.style.color = count >= priceCandy ? "green" : "";
+    priceCursorElement.style.color = count >= priceCursor ? "green" : "red";
+    priceAutoClickElement.style.color = count >= priceAutoClick ? "green" : "red";
+    priceCandyElement.style.color = count >= priceCandy ? "green" : "red";
+    priceCandyfarmElement.style.color = count >= priceCandyfarm ? "green" : "red";
+    priceCandymineElement.style.color = count >= priceCandymine ? "green" : "red";
+    priceCandyfactoryElement.style.color = count >= priceCandyfactory ? "green" : "red";
 }
 
 // Afisarea scorului cu numărul formatat
@@ -74,6 +109,8 @@ buyAutoClick.onclick = function() {
         countUpgradeAutoClick++;
         priceAutoClick += 350;
         autoclickerIncrement += 25;
+        perSecondCount += autoclickerIncrement;
+        autoclickercount.innerText = `per second: ${formatNumber(perSecondCount)} candies`;
         score.innerText = `${formatNumber(count)} candies`;
         priceAutoClickElement.innerText = `${formatNumber(priceAutoClick)}`;
         countUpgradeAutoClickElement.innerText = `${countUpgradeAutoClick}`;
@@ -99,6 +136,67 @@ buyCandy.onclick = function() {
         priceCandyElement.innerText = `${formatNumber(priceCandy)}`;
         countUpgradeCandyElement.innerText = `${countUpgradeCandy}`;
     }
+
+    updatePriceColor();
+};
+
+// Funcția pentru achiziționarea de auto-clicker Candyfarm
+buyCandyfarm.onclick = function() {
+    if (count >= priceCandyfarm) {
+        count -= priceCandyfarm;
+        countUpgradeCandyfarm++;
+        priceCandyfarm += 3107; 
+        candyfarmIncrement += 185;
+        perSecondCount += candyfarmIncrement;
+        autoclickercount.innerText = `per second: ${formatNumber(perSecondCount)} candies`;
+        score.innerText = `${formatNumber(count)} candies`;
+        priceCandyfarmElement.innerText = `${formatNumber(priceCandyfarm)}`;
+        countUpgradeCandyfarmElement.innerText = `${countUpgradeCandyfarm}`;
+    }
+-
+    setInterval(() => {
+        count += candyfarmIncrement;
+        score.innerText = `${formatNumber(count)} candies`;
+        updatePriceColor();
+    }, 1000);
+
+    updatePriceColor();
+};
+
+// Funcția pentru achiziționarea de Candymine
+buyCandymine.onclick = function() {
+    if (count >= priceCandymine) {
+        count -= priceCandymine;
+        countUpgradeCandymine++;
+        increment += 7273;
+        priceCandymine += 8961;
+        score.innerText = `${formatNumber(count)} candies`;
+        priceCandymineElement.innerText = `${formatNumber(priceCandymine)}`;
+        countUpgradeCandymineElement.innerText = `${countUpgradeCandymine}`;
+    }
+
+    updatePriceColor();
+};
+
+// Funcția pentru achiziționarea de auto-clicker Candyfactory
+buyCandyfactory.onclick = function() {
+    if (count >= priceCandyfactory) {
+        count -= priceCandyfactory;
+        countUpgradeCandyfactory++;
+        priceCandyfactory += 53714;
+        candyfactoryIncrement += 438;
+        perSecondCount += candyfactoryIncrement;
+        autoclickercount.innerText = `per second: ${formatNumber(perSecondCount)} candies`;
+        score.innerText = `${formatNumber(count)} candies`;
+        priceCandyfactoryElement.innerText = `${formatNumber(priceCandyfactory)}`;
+        countUpgradeCandyfactoryElement.innerText = `${countUpgradeCandyfactory}`;
+    }
+
+    setInterval(() => {
+        count += candyfactoryIncrement;
+        score.innerText = `${formatNumber(count)} candies`;
+        updatePriceColor();
+    }, 1000);
 
     updatePriceColor();
 };
