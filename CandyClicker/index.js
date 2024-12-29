@@ -1,6 +1,9 @@
 let btnCandy = document.getElementById("btnCandy");
 let score = document.getElementById("score");
 let autoclickercount = document.getElementById("autoclickercount");
+let btnShop = document.getElementById("btnShop");
+let closeShop = document.getElementById("closeShop");
+let shopMenu = document.getElementById("shopMenu");
 
 // - - - - - - - - - - Cursor
 let priceCursorElement = document.getElementById("priceCursor");
@@ -60,14 +63,19 @@ let countUpgradeCandyfactory = 0;
 
 // Functia pentru formatarea numerelor
 function formatNumber(value) {
-    if (value >= 1_000_000) {
-        return (value / 1_000_000).toFixed(1) + "M"; // Milioane
-    } else if (value >= 1_000) {
-        return (value / 1_000).toFixed(1) + "K"; // Mii
+    if (value >= 1_000_000_000_000) { // Trilioane
+        return (value / 1_000_000_000_000).toFixed(1) + "T";
+    } else if (value >= 1_000_000_000) { // Miliarde
+        return (value / 1_000_000_000).toFixed(1) + "B";
+    } else if (value >= 1_000_000) { // Milioane
+        return (value / 1_000_000).toFixed(1) + "M";
+    } else if (value >= 1_000) { // Mii
+        return (value / 1_000).toFixed(1) + "K";
     } else {
-        return value; // Dacă nu ajunge la 1000, afișează valoarea exactă
+        return value.toString(); // Dacă e mai mic de 1000
     }
 }
+
 
 // Actualizarea culorii prețurilor în funcție de count
 function updatePriceColor() {
@@ -79,13 +87,32 @@ function updatePriceColor() {
     priceCandyfactoryElement.style.color = count >= priceCandyfactory ? "green" : "red";
 }
 
+btnShop.onclick = function() {
+    shopMenu.style.display = "block";
+    btnShop.style.display = "none";
+    btnCandy.style.display = "none";
+}
+
+closeShop.onclick = function() {
+    shopMenu.style.display = "none";
+    btnShop.style.display = "block";
+    btnCandy.style.display = "block";
+}
+
 // Afisarea scorului cu numărul formatat
 btnCandy.onclick = function () {
     count += increment;
     score.innerText = `${formatNumber(count)} candies`;
 
+    // btnCandy.style.transform = "scale(0.95)";
+    
+    // setTimeout(() => {
+    //     btnCandy.style.transform = "scale(1)";
+    // }, 100);
+
     updatePriceColor();
 };
+
 
 // Funcția pentru achiziționarea de cursor
 buyCursor.onclick = function() {
@@ -97,7 +124,12 @@ buyCursor.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         priceCursorElement.innerText = `${formatNumber(priceCursor)}`;
         countUpgradeCursorElement.innerText = `${countUpgradeCursor}`;
+        buyCursor.style.transform = "scale(0.95)";
     }
+    
+    setTimeout(() => {
+        buyCursor.style.transform = "scale(1)";
+    }, 100);
 
     updatePriceColor();
 };
@@ -114,6 +146,7 @@ buyAutoClick.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         priceAutoClickElement.innerText = `${formatNumber(priceAutoClick)}`;
         countUpgradeAutoClickElement.innerText = `${countUpgradeAutoClick}`;
+        buyAutoClick.style.transform = "scale(0.95)";
     }
 
     setInterval(() => {
@@ -121,6 +154,10 @@ buyAutoClick.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         updatePriceColor();
     }, 1000);
+
+    setTimeout(() => {
+        buyAutoClick.style.transform = "scale(1)";
+    }, 100);
 
     updatePriceColor();
 };
@@ -135,7 +172,12 @@ buyCandy.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         priceCandyElement.innerText = `${formatNumber(priceCandy)}`;
         countUpgradeCandyElement.innerText = `${countUpgradeCandy}`;
+        buyCandy.style.transform = "scale(0.95)";
     }
+
+    setTimeout(() => {
+        buyCandy.style.transform = "scale(1)";
+    }, 100);
 
     updatePriceColor();
 };
@@ -152,6 +194,7 @@ buyCandyfarm.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         priceCandyfarmElement.innerText = `${formatNumber(priceCandyfarm)}`;
         countUpgradeCandyfarmElement.innerText = `${countUpgradeCandyfarm}`;
+        buyCandyfarm.style.transform = "scale(0.95)";
     }
 -
     setInterval(() => {
@@ -159,6 +202,10 @@ buyCandyfarm.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         updatePriceColor();
     }, 1000);
+
+    setTimeout(() => {
+        buyCandyfarm.style.transform = "scale(1)";
+    }, 100);
 
     updatePriceColor();
 };
@@ -173,7 +220,12 @@ buyCandymine.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         priceCandymineElement.innerText = `${formatNumber(priceCandymine)}`;
         countUpgradeCandymineElement.innerText = `${countUpgradeCandymine}`;
+        buyCandymine.style.transform = "scale(0.95)";
     }
+
+    setTimeout(() => {
+        buyCandymine.style.transform = "scale(1)";
+    }, 100);
 
     updatePriceColor();
 };
@@ -190,6 +242,7 @@ buyCandyfactory.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         priceCandyfactoryElement.innerText = `${formatNumber(priceCandyfactory)}`;
         countUpgradeCandyfactoryElement.innerText = `${countUpgradeCandyfactory}`;
+        buyCandyfactory.style.transform = "scale(0.95)";
     }
 
     setInterval(() => {
@@ -197,6 +250,10 @@ buyCandyfactory.onclick = function() {
         score.innerText = `${formatNumber(count)} candies`;
         updatePriceColor();
     }, 1000);
+
+    setTimeout(() => {
+        buyCandyfactory.style.transform = "scale(1)";
+    }, 100);
 
     updatePriceColor();
 };

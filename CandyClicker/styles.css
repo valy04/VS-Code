@@ -40,6 +40,69 @@
     margin-top: 7px;
 }
 
+.btn-shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 18px 7px 16px;
+    width: 135px;
+    margin: 20px 0 0 20px;
+    background-color: #ec4494;
+    border: 3px solid #731241;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.skin-shop button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: transparent;
+    text-shadow: 
+        2px 2px 0 #731241, /* Umbra la dreapta jos */
+        -2px 2px 0 #731241, /* Umbra la stânga jos */
+        2px -2px 0 #731241, /* Umbra la dreapta sus */
+        -2px -2px 0 #731241, /* Umbra la stânga sus */
+        0 2px 0 #731241, /* Jos */
+        0 -2px 0 #731241, /* Sus */
+        2px 0 0 #731241, /* Dreapta */
+        -2px 0 0 #731241; /* Stânga */
+
+}
+
+.btn-shop svg {
+    width: 25px;
+    height: 25px;
+}
+
+.close-shop {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.close-shop svg {
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+
+.shop-menu {
+    display: none;
+    position: absolute;
+    left: 33%;
+    transform: translate(-50%, 28%);
+    background-color: #ec4494;
+    border: 5px solid #731241;
+    border-radius: 30px;
+    width: 800px;
+    height: 350px;
+}
+
 .candy {
     position: absolute;
     left: 33%;
