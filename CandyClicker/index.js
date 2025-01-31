@@ -158,12 +158,6 @@ btnCandy.onclick = function () {
     count += increment;
     score.innerText = `${formatNumber(count)} candies`;
 
-    // btnCandy.style.transform = "scale(0.95)";
-    
-    // setTimeout(() => {
-    //     btnCandy.style.transform = "scale(1)";
-    // }, 100);
-
     updatePriceColor();
 };
 
