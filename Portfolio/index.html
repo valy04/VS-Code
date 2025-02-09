@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Portfolio/styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -21,15 +21,21 @@
                 </li>
             </ul>
             <ul class="nav-ul">
-                <li class="nav-li hv-cl">Portfolio</li>
-                <li class="nav-li hv-cl">About Me</li>
-                <li class="nav-li hv-cl btn-contact">Contact Me</li>
+                <li class="nav-li hv-cl"><a href="">Portfolio</li></a>
+                <li class="nav-li hv-cl"><a href="">About Me</li></a>
+                <li class="nav-li btn-contact"><a href="">Contact Me</li></a>
+                <li class="nav-li li-svg"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/></svg></li></a>
             </ul>
         </nav>
     </header>
-    <div class="wrp-bg"><img src="./resources/Background.webp" alt="Background.jpg"></div>
-    <div class="frame-shadow"></div>
-    <div class="big-me"><img src="./resources/me-gray.jpg" alt="Me.gray"></div>
+    <div class="wrp-bg">
+        <img class="img-bg" src="./resources/Background.jpg" alt="Background.png">
+        <div class="wrp-bg-me">
+            <img class="img-me" src="./resources/me-gray.jpg" alt="Me-gray">
+        </div>
+        <p class="quote">A <span>Romanian</span> programmer who dreams towards the absolute</p>
+        <div class="frame-shadow"></div>
+    </div>
 </body>
-<script src=""></script>
+<script src="./index.js"></script>
 </html>
