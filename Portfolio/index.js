@@ -1,3 +1,5 @@
+// - - - - - NAV BAR SCROLLING - - - - -
+
 window.addEventListener("scroll", function () {
     let nav = document.querySelector(".nav");
     if (window.scrollY >= 60) {
@@ -6,3 +8,6 @@ window.addEventListener("scroll", function () {
         nav.classList.remove("blur");
     }
 });
+
+// - - - - - SLIDER PROJECTS - - - - -
+
