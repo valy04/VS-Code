@@ -77,8 +77,6 @@ function formatNumber(value) {
     }
 }
 
-
-// Actualizarea culorii prețurilor în funcție de count
 function updatePriceColor() {
     priceCursorElement.style.color = count >= priceCursor ? "green" : "red";
     priceAutoClickElement.style.color = count >= priceAutoClick ? "green" : "red";
@@ -146,21 +144,17 @@ function manageSkin(skin, button) {
     updatePriceColor();
 }
 
-// Asocierea fiecărui buton cu un skin
 document.querySelectorAll(".btn-buy-skin").forEach((button, index) => {
     button.setAttribute("data-id", candySkins[index].id); // Adaugăm un atribut pentru identificare
     button.addEventListener("click", () => manageSkin(candySkins[index], button));
 });
 
-
-// Afisarea scorului cu numărul formatat
 btnCandy.onclick = function () {
     count += increment;
     score.innerText = `${formatNumber(count)} candies`;
 
     updatePriceColor();
 };
-
 
 // Funcția pentru achiziționarea de cursor
 buyCursor.onclick = function() {
