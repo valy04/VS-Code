@@ -217,12 +217,13 @@ body {
     scroll-behavior: smooth;
     gap: 2rem;
     width: 100%;
+    will-change: transform;
     scroll-snap-type: x mandatory;
 }
 
 .project {
     flex: 0 0 calc(33.33% - 1.4rem);
-    height: 85dvh;
+    height: 95dvh;
     scroll-snap-align: start;
 }
 
@@ -239,7 +240,7 @@ body {
 .wrp-img-art img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 1.9rem;
 }
 
@@ -293,34 +294,80 @@ body {
 
 .div1 {grid-area: 1 / 1 / 2 / 4; }
 
-.div2 {grid-area: 2 / 1 / 3 / 2;}
+.div2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    grid-area: 2 / 1 / 3 / 2;
+}
 
 .div3 {grid-area: 2 / 2 / 3 / 4;}
 
 .dv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-image: linear-gradient(140deg, #161616 0%, #0D0D0D 100%);
     border: 1px solid rgba(73,73,73,.6);
     padding: 3rem 0;
     border-radius: 2rem;
 }
 
-.wrp-ab {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .ab-title {
     color: var(--color-green);
     font-size: 3.27dvw;
+    display: flex;
+    justify-content: center;
 }
+
 .ab-p {
     text-align: center;
     margin-top: 1.6rem;
     padding: 0 8.5rem;
     font-size: 2.4dvw;
 }
+
+.boton-elegante {
+    position: relative;
+    width: 8rem;
+    padding: 0.7rem 0;
+    border: 2px solid #2c2c2c;
+    background-color: #4c4c4c;
+    color: #ffffff;
+    font-size: 1.2dvw;
+    cursor: pointer;
+    border-radius: 27px;
+    transition: all 0.4s ease;
+    outline: none;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  .boton-elegante::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .boton-elegante:hover::after {
+    transform: scale(4);
+  }
+  
+  .boton-elegante:hover {
+    border-color: #666666;
+    background: #292929;
+  }
 
 @media (max-width: 1250px) {
     body {
@@ -450,7 +497,7 @@ body {
     }
     
     .project {
-        height: 75dvh;
+        height: 85dvh;
         flex: 0 0 calc(50% - 1.4rem)
     }
 }
@@ -491,6 +538,7 @@ body {
     }
 
     .img-wrapper {
+        margin-right: 0.9rem;
         width: 2.8125rem;
         height: 2.8125rem;
     }
@@ -541,6 +589,7 @@ body {
     .btn-contact {display: none;}
     
     .nav {
+        padding: 1.5625rem 1.25rem 1.25rem 1.25rem;
         font-size: 1rem;
     }
 
@@ -590,5 +639,9 @@ body {
         top: 84%;
         width: 19rem;
         font-size: 2rem;
+    }
+
+    .projects {
+        padding: 0 1.25rem;
     }
 }
