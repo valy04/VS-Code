@@ -11,25 +11,25 @@ window.addEventListener("scroll", function () {
 
 // - - - - - SLIDER PROJECTS - - - - -
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const container = document.querySelector(".wrp-projects");
-//     const leftBtn = document.querySelector(".nav-btn.left");
-//     const rightBtn = document.querySelector(".nav-btn.right");
-//     const firstArticle = container.querySelector(".project");
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".wrp-projects");
+    const leftBtn = document.querySelector(".nav-btn.left");
+    const rightBtn = document.querySelector(".nav-btn.right");
+    const firstArticle = container.querySelector(".project");
 
-//     const calculateScrollAmount = () => {
-//         const articleWidth = firstArticle.offsetWidth;
-//         const marginRight = parseInt(window.getComputedStyle(container).marginRight.replace("px", ""));
-//         return articleWidth + marginRight;
-//     };
+    const calculateScrollAmount = () => {
+        const articleWidth = firstArticle.offsetWidth;
+        const marginRight = parseInt(window.getComputedStyle(container).marginRight.replace("px", ""));
+        return articleWidth + marginRight;
+    };
 
-//     rightBtn.addEventListener("click", function () {
-//         const scrollAmount = calculateScrollAmount();
-//         container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-//     });
+    rightBtn.addEventListener("click", function () {
+        const scrollAmount = calculateScrollAmount();
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
 
-//     leftBtn.addEventListener("click", function () {
-//         const scrollAmount = calculateScrollAmount();
-//         container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-//     });
-// });
+    leftBtn.addEventListener("click", function () {
+        const scrollAmount = calculateScrollAmount();
+        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
+});
