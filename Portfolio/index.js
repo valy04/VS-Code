@@ -33,3 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
         container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     });
 });
+
+// - - - - - ANIMATION KEYFRAMES APPEAR - - - - -
+
+document.addEventListener("DOMContentLoaded", () => {
+    const animatedElements = document.querySelectorAll(".appear, .move-to-top");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add("visible");
+                }, index * 200); // Apare unul câte unul
+            } else {
+                entry.target.classList.remove("visible"); // Dispare când iese din viewport
+            }
+        });
+    }, { threshold: 0.2 });
+
+    animatedElements.forEach((el) => observer.observe(el));
+});

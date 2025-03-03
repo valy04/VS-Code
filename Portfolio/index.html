@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="nav">
-            <ul class="nav-ul">
+            <ul class="nav-ul left-to-right">
                 <li class="nav-li">
                     <div class="wrp-me">
                         <div class="img-wrapper"><img src="./resources/me-gray.jpg" alt="Photo-Me"></div>
@@ -20,63 +20,65 @@
                     </div>
                 </li>
             </ul>
-            <ul class="nav-ul">
-                <li class="nav-li hv-cl"><a href="#projects">Portfolio</li></a>
-                <li class="nav-li hv-cl"><a href="#about-me">About Me</li></a>
-                <li class="nav-li btn-contact"><a href="">Contact Me</li></a>
-                <li class="nav-li li-svg"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/></svg></li></a>
-            </ul>
+            <ul class="nav-ul right-to-left">
+                <li class="nav-li hv-cl"><a href="#projects">Portfolio</a></li>
+                <li class="nav-li hv-cl"><a href="#about-me">About Me</a></li>
+                <li class="nav-li btn-contact"><a href="">Contact Me</a></li>
+                <li class="nav-li li-svg"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/></svg></a></li>
+            </ul>            
         </nav>
     </header>
-    <div class="wrp-bg">
-        <img class="img-bg" src="./resources/Background.jpg" alt="Background.png">
-        <div class="wrp-bg-me">
-            <img class="img-me" src="./resources/me-gray.jpg" alt="Me-gray">
-        </div>
-        <p class="quote">A <span>Romanian</span> programmer who dreams towards the absolute</p>
-        <div class="frame-shadow"></div>
-    </div>
-    <div class="projects" id="projects">
-        <div class="wrp-projects">
-            <article class="project"><a href="">
-                <div class="wrp-img-art">
-                    <img src="https://pub-e1713372102f44a69bc855bfb0583f7b.r2.dev/01%20Free%20iPhone%2016%20Pro%20Mockup%20Holding%20By%20Hand_11zon.webp" loading="lazy" alt="Mock-up AnimeHub">
-                </div></a>
-            </article>
-            <article class="project"><a href="">
-                <div class="wrp-img-art">
-                    <img src="https://pub-e1713372102f44a69bc855bfb0583f7b.r2.dev/Free%20iPhone%2015%20Mockup_11zon.webp" loading="lazy" alt="Mock-up AnimeHub">
-                </div></a>
-            </article>
-            <article class="project">
-                <div class="wrp-img-art"><a href="">
-                    <img src="https://pub-e1713372102f44a69bc855bfb0583f7b.r2.dev/iPhone-16-Pro-Mockup_11zon.webp" loading="lazy" alt="Mock-up Mytruckanime">
-                </div></a>
-            </article>
-        </div>
-        <div class="pagination-container">
-            <button class="nav-btn left">&lt;</button>
-            <button class="nav-btn right">&gt;</button>
-        </div>
-    </div>
-    <div class="wrp-about-me" id="about-me">
-        <div class="div1 dv">
-            <span class="ab-title">About me</span>
-            <p class="ab-p">I started the adventure in 2023 as a passion, and now I want to excel in several fields such as web development and even the games part.</p>
-        </div>
-        <div class="div2 dv">
-            <span class="ab-title">Ai un proiect?</span>
-            <button class="boton-elegante">Trimite</button>
-        </div>
-        <div class="div3 dv">
-            <span class="ab-title">Skills</span>
-            <div class="skills">
-                <img src="./resources/html.svg" alt="html.svg">
-                <img src="./resources/css.svg" alt="css.svg">
-                <img src="./resources/figma.svg" alt="figma.svg">
+    <main>
+        <div class="wrp-bg">
+            <img class="img-bg" src="./resources/Background.jpg" alt="Background">
+            <div class="wrp-bg-me move-to-top">
+                <img class="img-me" src="./resources/me-gray.jpg" alt="Me-gray">
             </div>
+            <p class="quote move-to-top">A <span>Romanian</span> programmer who dreams towards the absolute</p>
+            <div class="frame-shadow"></div>
         </div>
-    </div>
+        <section class="projects appear" id="projects">
+            <div class="wrp-projects">
+                <article class="project"><a href="">
+                    <div class="wrp-img-art">
+                        <img src="" loading="lazy" alt="Mock-up AnimeHub">
+                    </div></a>
+                </article>
+                <article class="project"><a href="">
+                    <div class="wrp-img-art">
+                        <img src="" loading="lazy" alt="Mock-up AnimeHub">
+                    </div></a>
+                </article>
+                <article class="project"><a href="">
+                    <div class="wrp-img-art">
+                        <img src="" loading="lazy" alt="Mock-up Mytruckanime">
+                    </div></a>
+                </article>
+            </div>
+            <div class="pagination-container">
+                <button class="nav-btn left">&lt;</button>
+                <button class="nav-btn right">&gt;</button>
+            </div>
+        </section>
+        <section class="wrp-about-me" id="about-me">
+            <div class="div1 dv appear">
+                <span class="ab-title">About me</span>
+                <p class="ab-p">I started the adventure in 2023 as a passion, and now I want to excel in several fields such as web development and even the games part.</p>
+            </div>
+            <div class="div2 dv appear">
+                <span class="ab-title">Ai un proiect?</span>
+                <button class="boton-elegante">Trimite</button>
+            </div>
+            <div class="div3 dv appear">
+                <span class="ab-title">Skills</span>
+                <div class="skills">
+                    <img src="./resources/html.svg" alt="HTML">
+                    <img src="./resources/css.svg" alt="CSS">
+                    <img src="./resources/figma.svg" alt="Figma">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
 </body>
-<script src="./index.js"></script>
 </html>
