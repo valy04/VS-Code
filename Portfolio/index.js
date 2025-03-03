@@ -12,14 +12,39 @@ document.addEventListener("DOMContentLoaded", function () {
         return articleWidth + marginRight;
     };
 
+    const scrollAmount = calculateScrollAmount();
+    let scrollPosition = 0;
+    let autoScrollInterval;
+
+    const scrollInfinite = () => {
+        scrollPosition += scrollAmount;
+
+        if (scrollPosition >= container.scrollWidth) {
+            container.scrollLeft = 0;
+            scrollPosition = 0;
+            resetAutoScroll();
+        } else {
+            container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        }
+    };
+
+    const resetAutoScroll = () => {
+        if (autoScrollInterval) {
+            clearInterval(autoScrollInterval);
+        }
+        autoScrollInterval = setInterval(scrollInfinite, 5000);
+    };
+
+    resetAutoScroll();
+
     rightBtn.addEventListener("click", function () {
-        const scrollAmount = calculateScrollAmount();
         container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        resetAutoScroll();
     });
 
     leftBtn.addEventListener("click", function () {
-        const scrollAmount = calculateScrollAmount();
         container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        resetAutoScroll();
     });
 });
 
@@ -33,12 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.add("visible");
-                }, index * 200); // Apare unul câte unul
+                }, index * 200);
             } else {
-                entry.target.classList.remove("visible"); // Dispare când iese din viewport
+                entry.target.classList.remove("visible");
             }
         });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.1 });
 
     animatedElements.forEach((el) => observer.observe(el));
 });

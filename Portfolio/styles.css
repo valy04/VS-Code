@@ -262,9 +262,11 @@ body {
 
 .project {
     flex: 0 0 calc(33.33% - 1.4rem);
-    height: 95dvh;
+    height: 90dvh;
     scroll-snap-align: start;
 }
+
+.project a {color: white;}
 
 .wrp-img-art {
     position: relative;
@@ -274,6 +276,7 @@ body {
     border: 1px solid rgba(73,73,73,.6);
     background-image: linear-gradient(140deg, #161616 0%, #0D0D0D 100%);
     user-select: none;
+    z-index: -1;
 }
 
 .wrp-img-art img {
@@ -281,6 +284,58 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 1.9rem;
+}
+
+.detail {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2dvw;
+    user-select: auto;
+    top: 1.5rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow:
+        5px 5px 15px rgba(0, 0, 0, 1),
+        -2px -2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.wrp-title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 50%;
+    bottom: 2rem;
+    padding: 0 1.5rem;
+    width: 100%;
+    user-select: auto;
+    transform: translateX(-50%);
+    text-shadow:
+    5px 5px 15px rgba(0, 0, 0, 1),
+    -2px -2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.title-project {
+    font-size: 3dvw;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.wrp-title span:last-child {
+    font-size: 1.3dvw;
+}
+
+.wrp-title svg {
+    width: 1.5dvw;
+    height: 4dvh;
+    vertical-align: middle;
+    color: var(--color-green);
 }
 
 .pagination-container {
@@ -420,6 +475,7 @@ body {
     width: 3dvw;
     height: 5.6dvh;
     gap: 2rem;
+    user-select: none;
 }
 
 .skills img {
@@ -503,6 +559,8 @@ body {
     margin-left: 5px;
     color: var(--color-green);
 }
+
+.mb-sp {margin-right: 5px;}
 
 @media (max-width: 1250px) {
     body {
@@ -632,6 +690,24 @@ body {
     .media svg {
         width: 1.2rem;
         height: 1.2rem;
+    }
+
+    .title-project {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .wrp-title span:last-child {
+        font-size: 1.25rem;
+    }
+    
+    .wrp-title svg {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .detail {
+        font-size: 1.05rem;
     }
 }
 
