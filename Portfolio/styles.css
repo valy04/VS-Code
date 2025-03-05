@@ -213,9 +213,10 @@ body {
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 24.4dvw;
-    height: 52.7dvh;
+    width: min(24.4dvw, 50rem);
+    height: auto;
     user-select: none;
+    aspect-ratio: 1 / 1;
 }
 
 .img-me {
@@ -261,8 +262,8 @@ body {
 }
 
 .project {
-    flex: 0 0 calc(33.33% - 1.4rem);
-    height: 90dvh;
+    flex: 1;
+    height: clamp(500px, 85dvh, 44rem); 
     scroll-snap-align: start;
 }
 
@@ -291,6 +292,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0 1.5rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2dvw;
@@ -754,8 +756,7 @@ body {
     }
     
     .project {
-        height: 85dvh;
-        flex: 0 0 calc(50% - 1.4rem)
+        flex: 0 0 calc(50% - 1rem)
     }
 }
 
@@ -922,8 +923,8 @@ body {
     }
 
     .frame-shadow {
-        bottom: -0.5rem;
-        height: 22rem;
+        bottom: 0;
+        height: 20rem;
     }
 
     .wrp-bg-me {
